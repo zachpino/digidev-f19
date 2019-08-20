@@ -24,7 +24,7 @@ The late 1980's were an awkward time in computer programming. The ease of develo
 
 ![monty python](https://cdn.vox-cdn.com/thumbor/aldZVwNCJ4O4A-erlXPpzpY_-iY=/0x0:1280x720/1200x800/filters:focal(558x144:762x348)/cdn.vox-cdn.com/uploads/chorus_image/image/62606976/46808a50f9bb87e9e136b738a2a7c27a60f024b7.0.jpg)
 
-Python is designed to be easy to learn and human-readable. Towards this end, whitespace (tabs, space, and returns) is semantic in Python unlike in most other programming languages. Additional eccentricities include [optional data typing](https://en.wikipedia.org/wiki/Type_system#DYNAMIC), easy transitions between [functional](https://en.wikipedia.org/wiki/Functional_programming) and [object-oriented]https://en.wikipedia.org/wiki/Object-oriented_programming() programming paradigms, and a comprehensive but easily extensible [standard library](https://en.wikipedia.org/wiki/Standard_library).
+Python is designed to be easy to learn and human-readable. Towards this end, whitespace (tabs, space, and returns) is semantic in Python unlike in most other programming languages. Additional eccentricities include [optional data typing](https://en.wikipedia.org/wiki/Type_system#DYNAMIC), easy transitions between [functional](https://en.wikipedia.org/wiki/Functional_programming) and [object-oriented](https://en.wikipedia.org/wiki/Object-oriented_programming) programming paradigms, and a comprehensive but easily extensible [standard library](https://en.wikipedia.org/wiki/Standard_library).
 
 -----
 
