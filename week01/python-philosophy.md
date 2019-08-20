@@ -1,10 +1,10 @@
 ##### Week 01 Contents
-- Presentation: [Syllabus Review, Course Objectives Discussion](week01/readme.md)
-- Code: [Python History and Philosophy](week01/python-philosophy.md)
-- Code: [Terminal Basics](week01/terminal.md)
-- Code: [Python Introduction and Data Manipulation](week01/python.md)
-- Components: [Raspberry Pi, Breadboard, Jumper Cables, LED, Resistor, Pushbutton](week01/circuits.md)
-- Homework: [Do some research, complete some Python examples, and setup your Raspberry Pi](week01/homework.md)
+- Presentation: [Syllabus Review, Course Objectives Discussion](readme.md)
+- Code: [Python History and Philosophy](python-philosophy.md)
+- Code: [Terminal Basics](terminal.md)
+- Code: [Python Introduction and Data Manipulation](python.md)
+- Components: [Raspberry Pi, Breadboard, Jumper Cables, LED, Resistor, Pushbutton](circuits.md)
+- Homework: [Do some research, complete some Python examples, and setup your Raspberry Pi](homework.md)
 
 -----
 
