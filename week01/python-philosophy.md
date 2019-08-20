@@ -1,5 +1,5 @@
 ##### Week 01 Contents
-- Presentation: [Syllabus Review, Course Objectives Discussion](week01/README.md)
+- Presentation: [Syllabus Review, Course Objectives Discussion](week01/readme.md)
 - Code: [Python History and Philosophy](week01/python-philosophy.md)
 - Code: [Terminal Basics](week01/terminal.md)
 - Code: [Python Introduction and Data Manipulation](week01/python.md)
