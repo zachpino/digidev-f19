@@ -88,33 +88,3 @@ Buttons come in [many different form factors and sizes](https://www.sparkfun.com
 Control a set of LEDs by making connections with buttons.
 
 ![led controller](led-controller-bb.png)
-
------
-
-### Homework
-
-#### LED Controller
-
-With *at least 3 Buttons* and *at least 3 colored LEDS*, create an LED controller *on your breadboard*.
-
-Imagine a scenario where such an object could offer utility to a certain user. Other than having a 1:1 relationship between buttons and LEDs, what could some other designed behaviors be? Could an additional button manage whether or not LEDs flash? Could multiple LEDs be active at once, and if so, how could button presses manage all the possible permutations? Prepare to present your work!
-
-#### General Research
-
-Browse both [sparkfun](www.sparkfun.com) and [adafruit](www.adafruit.com), fine purveyors of small electrical bits and pieces. Find at least 3 exciting components to share with the class next week.
-
-#### Project Research
-
-Given the small and dedicated class, perhaps the overarching course theme could be arrived at democratically. Read through some of these options, and bring a Post-It note that ranks the following...
-
-a. Read through this [government grant from the Help America Vote Act](https://www.grants.gov/web/grants/search-grants.html?keywords=hava) that strives to improve America's *incredibly outdated and vulnerable* voting infrastructure for individuals with visual and physical impairments. The language is confusing and vague, so listen to [this short podcast](https://art19.com/shows/the-weeds/episodes/50ddf118-3914-4be9-aace-414c9c0e372b) as well to better understand the problem and opportunities at every level. 
-
-b. Public safety in emerging economies is a constant topic worthy of design and technological intervention, and particularly so in places where autonomous vehicles will soon be introduced where *piloted vehicles* themselves were never commonplace. [Opportunities for public safety improvment](https://fas.org/sgp/crs/misc/R44940.pdf) — at the pedestrian, architectural, infrastructural, and vehicle level — and public grants abound. 
-
-c. Epidemic spread is a growing concern in an increasingly interconnected world. Microbial sensors are finally available and ready to implement, but the [models used](http://www.gleamviz.org) to predict disease spread are not currently reinforced by any active sensor-derived data. Looking specifically at infection-spread in hospitals as a microcosm for global disease spread, is there a sensor-based intervention for tracking and ultimately predicting epidemic growth? Many grants exist for specific countries: for example, [Bangladesh](https://www.grants.gov/web/grants/search-grants.html?keywords=public%20safety%20vehicle%20autonomous).
-
-d. Large multiples of sensors and actuators offer huge promise for immersive experiences, and require a special kind of programming logic and optimization. Check out the works of [Random International](https://www.random-international.com) to determine if working in multiples might be interesting to you. 
-
-e. Alexa, Siri, and Google Assistant are nascent technologies that demand design consideration and implementation. Many of these systems are open source and ripe for activation and development. For example, the [AVS Platform](https://github.com/alexa/avs-device-sdk/wiki) gives any designer a turn-key method to embed Alexa's intelligence and reponsiveness in any physical object with an embedded Raspberry Pi microcontroller. Perhaps we could focus on voice interfaces this semester?
-
-f. If you were to work on a personal project that involves coding/electronics, do you have anything ready to go? 
