@@ -6,7 +6,7 @@
 
 -----
 
-### Physical and Digital Develoipment Workshop
+### Physical and Digital Development Workshop
 
 Please browse the [course syllabus](PhysDigiDev_F19_v1.pdf), which has more detail.
 
@@ -14,9 +14,7 @@ This recurring course teaches current and emerging electronics and programmatic 
 
 ![chicago transit](https://media.licdn.com/dms/image/C561BAQE5YfqeKoEVTQ/company-background_10000/0?e=2159024400&v=beta&t=Kbl95z4fXbOCukbzpcDe1mpw05IqLtvrwe20qrBStqQ)
 
-Under the theme of data-driven urban transformation, we will be looking at the topic of accessible transit infrastructure, paratransit, autonomous vehicle technologies, and urban-level transit policy. The first several weeks of the course will arm students with Raspberry Pi 3B+ and Python competencies, as well as the technical skills necessary to access and manipulate large datasets. After this tutorial period is finished, students will be able to participate in one of two discrete, but complementary collaborative outcomes.
 
-1. Students in the class may elect to build a data-driven physical model of Chicago’s transit infrastructure based on public data. This model will be designed to support experimentation around transit policy, and allow users to prototype hypothetical systemic change predicated on existing transit data and patterns. 
+Under the theme of data-driven urban transformation, we will be looking at the topic of accessible transit infrastructure, paratransit, autonomous vehicle technologies, and urban-level transit policy. The first several weeks of the course will arm students with Raspberry Pi 3B+ and Python competencies, as well as the technical skills necessary to access and manipulate large datasets. After this tutorial period is finished, students will participate in an experimental, collaborative research project aiming to clarify, visualize, and evaluate design proposals for urban transit. 
 
-2. Students in the class may elect to focus on user-facing transit technologies, and develop autonomous vehicle routing algorithms, sensor- and imaging-driven augmented reality interfaces, and vehicle-level product design interventions.
-
+Students in the course will construct a data-driven, physical model of Chicago’s transit infrastructure, based on a combination of publicly-available data, research insights, and software-simulated determinations. This model, actuated by LEDs, speakers, screens, projected overlays, and (perhaps) motors, will be designed to enable experimentation in transit policy based on students’ research insights. Users of the model will be able to prototype hypothetical infrastructural changes, municipal policy interventions, and vehicle routing algorithms predicated on existing transit data. The model itself will be built with digital fabrication tools, and students will have light exposure to 3D modeling geographic data with computational milling machines and other digital fabrication tools.
