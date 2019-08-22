@@ -23,8 +23,6 @@ If interested, the following content was referenced in class during sidebar disc
 
 Please complete these foundational readings and research before class next week. Each task is small, but there are a lot of them to do! 
 
-- Please install Raspbian on your Raspberry Pi by completing the steps in [this tutorial](https://projects.raspberrypi.org/en/projects/noobs-install). The SD card that you all received in your kits already has most of this page completed, so begin at the step labeled *Booting from NOOBS*. Let me know if you encounter issues. This process may take some time, and can be completed with the HDMI displays in Kaplan room 226 and the USB mouse and keyboard hidden in the white cabinet in the corner. While it's installing, do the readings below!
-
 - Read a short [intro to Python](python-philosophy.md), and the philosophy of coding we will be taking in class. Also, take a peak at the [Firehose Project's *Things You  Should Never Do While Learning to Code*](http://blog.thefirehoseproject.com/posts/the-14-things-you-should-never-do-while-learning-to-code/).
 
 - Watch this short video of an [interactive London simulation model](https://www.youtube.com/watch?v=qCvGBhhDBnA), which is somewhat related to what the course aims to produce.
@@ -38,3 +36,9 @@ Please complete these foundational readings and research before class next week.
 - Browse the [Pace Transit Paratransit](http://www.pacebus.com/sub/paratransit/default.asp) homepage. What is available to the citizens of this city who need transit support? What does the process look like for accessing these resources?
 
 - We will be discussing selections from [Kat Holmes](https://katholmesdesign.com) *Mismatch*, a new book on technology-driven, inclusive design practices. All course PDFs will be accessible in [this Google Drive folder](https://drive.google.com/drive/folders/1lRB-g2c6-mOYRbo-Usb9As9pjDypJPDH?usp=sharing). Please read pages 11 - 83 (it's not that bad, lots of pictures, empty pages, and big text!) and prepare for discussion. Please write down *on paper* three questions that this reading provoked in your mind to discuss with your peers.
+
+- Please install Raspbian on your Raspberry Pi by completing the steps in [this tutorial](https://projects.raspberrypi.org/en/projects/noobs-install). The SD card that you all received in your kits already has most of this tutorial completed, so insert that into your Raspberry Pi's bottom MicroSD slot, and begin at the step labeled *Booting from NOOBS* and continue through the end of the page. You'll know you're done when you see this screen. 
+
+	![raspi desktop](https://zdnet2.cbsistatic.com/hub/i/r/2017/08/21/9fabdaa3-b78f-419b-a59c-63205da5d002/resize/470xauto/99c3635c5d105429a31dba59a92b5517/2017-08-21-140315800x480scrot.png)
+
+	Note that your Raspberry Pi cannot connect to the school network, but we will have a solution for this next week. Let Zach know if you encounter issues in installation. This process may take some time, and can be completed with the HDMI displays in Kaplan room 226 and the USB mouse and keyboard hidden in the white cabinet in the corner. While it's installing, do the readings above!
