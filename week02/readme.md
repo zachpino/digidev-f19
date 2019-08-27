@@ -9,6 +9,25 @@
 	
 -----
 
+### Installing Requests and Accessing APIs
+
+Late breaking change to today's plan! 
+
+On your Macs, type this into your terminals...
+
+```
+sudo easy_install pip
+pip install requests
+```
+
+In class today, we'll be accessing an application programming interface, or API, available here at the [Chicago Train Tracker API](https://www.transitchicago.com/developers/traintracker/) page. First, request a key, and then skim through the documentation. In particular, study the *Arrivals API* as described in the [documentation](https://www.transitchicago.com/developers/ttdocs/). As a model, your query may look something like this...
+
+```
+http://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=#########&max=#&outputType=JSON&mapid=#####
+```
+
+-----
+
 ### Setting Up Raspberry Pi Wifi
 
 On your SD card, please place the following contents in a file `wpa_supplicant.conf` in `/Volumes/boot/` to connect to networks automatically, without the need for an HDMI screen, keyboard, and mouse.
