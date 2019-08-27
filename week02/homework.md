@@ -24,8 +24,8 @@ To be settled and amended after class (depending on progress). But, it will like
 
 - Request a key, and read the documentation for the [Chicago Train Tracker API](https://www.transitchicago.com/developers/traintracker/). In particular, study the *Arrivals API* as described in the [documentation](https://www.transitchicago.com/developers/ttdocs/). By next class, you should be able to ask the internet with your web browser for the next 5 predicted trains that will arrive at the 35th-Bronzeville-IIT stop (as well as your nearest home train stop?), when the trains are predicted to arrive, and which direction they are traveling. Your query will look something like this...
 
-```
-http://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=#########&max=#&outputType=JSON&mapid=#####
-```
+	```
+	http://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=#########&max=#&outputType=JSON&mapid=#####
+	```
 
-We will work with this data next week on our Raspberry Pis, to create a train arrival warning system for the studio!
+	We will work with this data next week on our Raspberry Pis, to create a train arrival warning system for the studio!
