@@ -1,10 +1,11 @@
-##### Week 01 Contents
-- Presentation: [Syllabus Review, Course Objectives Discussion](readme.md)
-- Code: [Python History and Philosophy](python-philosophy.md)
-- Code: [Terminal Basics](terminal.md)
-- Code: [Python Introduction and Data Manipulation](python.md)
-- Components: [Raspberry Pi, Breadboard, Jumper Cables, LED, Resistor, Pushbutton](circuits.md)
-- Homework: [Do some research, complete some Python examples, and setup your Raspberry Pi](homework.md)
+##### Week 02 Contents
+- Presentation: [Setting Up Raspberry Pi Wifi, SSH, and VLC Access, Inclusive Design Conversation](readme.md)
+- New Components: [RGB LED](circuits.md)
+- Code: [Moving around with Terminal](terminal.md)
+- Code: [Python Basics](python-basics.md)
+- Code: [Python Lists and Dicts](python-lists.md)
+- Code: [Python GPIO Control](python-gpio.md)
+- Homework: [Research, Readings, API Access, Programming Practice](homework.md)
 
 -----
 
@@ -13,5 +14,3 @@
 To be settled and amended after class (depending on progress). But, you will use these three resources!
 
 - [Python Practice](https://www.practicepython.org)
-- [Chicago Transit Data](https://www.transitchicago.com/data/)
-- [Raspberry Pi Setup](https://www.raspberrypi.org/help/noobs-setup/2/)

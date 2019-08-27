@@ -1,10 +1,11 @@
-##### Week 01 Contents
-- Presentation: [Syllabus Review, Course Objectives Discussion](readme.md)
-- Code: [Python History and Philosophy](python-philosophy.md)
-- Code: [Terminal Basics](terminal.md)
-- Code: [Python Introduction and Data Manipulation](python.md)
-- Components: [Raspberry Pi, Breadboard, Jumper Cables, LED, Resistor, Pushbutton](circuits.md)
-- Homework: [Do some research, complete some Python examples, and setup your Raspberry Pi](homework.md)
+##### Week 02 Contents
+- Presentation: [Setting Up Raspberry Pi Wifi, SSH, and VLC Access, Inclusive Design Conversation](readme.md)
+- New Components: [RGB LED](circuits.md)
+- Code: [Moving around with Terminal](terminal.md)
+- Code: [Python Basics](python-basics.md)
+- Code: [Python Lists and Dicts](python-lists.md)
+- Code: [Python GPIO Control](python-gpio.md)
+- Homework: [Research, Readings, API Access, Programming Practice](homework.md)
 
 -----
 
@@ -18,7 +19,7 @@ On Windows, install [Cygwin](https://www.cygwin.com)
 
 The Terminal is a way of controlling your computer without any graphical user elements. You type in commands, and the machine responds with text back to you.
 
-macOS and Cygwin use a Terminal dialect called [Bash](https://en.wikipedia.org/wiki/Bash_(Unix_shell)) which is derived from a shared Unix ancestry. The Bash language that we will be writing is [very concise](http://ss64.com/bash/).
+macOS and Cygwin use a Terminal dialect closely [Bash](https://en.wikipedia.org/wiki/Bash_(Unix_shell)) which is derived from a shared Unix ancestry. The Bash language that we will be writing is [very concise](http://ss64.com/bash/).
 
 #### Using These Tutorials
 
