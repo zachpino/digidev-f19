@@ -23,7 +23,7 @@ If interested, the following content was referenced in class during sidebar disc
 
 Please complete these foundational readings and research before class next week. Each task is small, but there are a lot of them to do! 
 
-- Read a short [intro to Python](python-philosophy.md), and the philosophy of coding we will be taking in class. Also, take a peak at the [Firehose Project's *Things You  Should Never Do While Learning to Code*](http://blog.thefirehoseproject.com/posts/the-14-things-you-should-never-do-while-learning-to-code/).
+- Read a short [intro to Python](python-philosophy.md), and the philosophy of coding we will be taking in class. Also, take a peak at the [Firehose Project's *Things You Should Never Do While Learning to Code*](http://blog.thefirehoseproject.com/posts/the-14-things-you-should-never-do-while-learning-to-code/).
 
 - Watch this short video of an [interactive London simulation model](https://www.youtube.com/watch?v=qCvGBhhDBnA), which is somewhat related to what the course aims to produce.
 
