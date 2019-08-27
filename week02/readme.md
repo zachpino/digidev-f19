@@ -13,6 +13,8 @@
 
 Late breaking change to today's plan! 
 
+You may want to download [Sublime](https://www.sublimetext.com) to more easily edit Python code.
+
 On your Macs, type this into your terminals...
 
 ```
@@ -25,6 +27,10 @@ In class today, we'll be accessing an application programming interface, or API,
 ```
 http://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=#########&max=#&outputType=JSON&mapid=#####
 ```
+
+You can also use an [online Python interpreter](https://repl.it/languages/python3) rather than running code today on your own systems.
+
+
 
 -----
 
