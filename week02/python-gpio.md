@@ -12,6 +12,7 @@
 ### Python GPIO
 
 ![python gpio pins](https://www.jameco.com/Jameco/workshop/circuitnotes/raspberry_pi_circuit_note_fig2.jpg)
+
 We can at last bring together our Python learnings and our small electronics experiments with the useful `GPIO` and `time` Python modules. `GPIO` allows us to turn and off all of the GPIO pins on the Raspberry PI, and time lets us pause our program for configurable amounts of time.
 
 If we wanted to blink and LED on and off, we could run the following code. Look closely at the comments for more information.
