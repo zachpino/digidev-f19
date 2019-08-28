@@ -206,9 +206,9 @@ ohayo gozaimasu
 ```
 
 
-##### Making Files and Directories
+##### Creating Files and Directories
 
-The `>` redirect operator will make a file if it does not already exist. 
+As we saw above, the `>` redirect operator will make a file if it does not already exist. 
 
 > `echo 'hey zach!' > new_file.txt`
 
