@@ -74,7 +74,7 @@ We will work with this data next week on our Raspberry Pis in Python, to create 
 
 - Setting Up Raspberry Pi Wifi
 
-Place your Raspberry Pi SD card in the USB reader in your kits, and plug it into your computers. please place the following contents in a file `wpa_supplicant.conf` in `/Volumes/boot/` to connect to networks automatically, without the need for an HDMI screen, keyboard, and mouse.
+Place your Raspberry Pi SD card in the USB reader in your kits, and plug it into your computers. We will need to edit and create some files in the volume that will show up on your computer named "boot" so that our Raspberry Pis can connect to networks automatically, without the need for an HDMI screen, keyboard, and mouse.
 
 In Terminal, type or paste these lines one at a time and hit enter after each.
 
