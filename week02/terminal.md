@@ -1,11 +1,8 @@
 ##### Week 02 Contents
-- Presentation: [Setting Up Raspberry Pi Wifi, SSH, and VLC Access, Inclusive Design Conversation](readme.md)
-- New Components: [RGB LED](circuits.md)
+- Presentation: [Installation, Inclusive Design Conversation](readme.md)
 - Code: [Moving around with Terminal](terminal.md)
 - Code: [Python Basics](python-basics.md)
-- Code: [Python Lists and Dicts](python-lists.md)
-- Code: [Python GPIO Control](python-gpio.md)
-- Homework: [Research, Readings, API Access, Programming Practice](homework.md)
+- Homework: [Readings, API Access, Programming Practice](homework.md)
 
 -----
 
@@ -121,7 +118,7 @@ We can also maneuver around the file system `cd`, abbreviated from "change direc
 
 > `cd Applications`
 
-*This is the same file system as exists when you move around amongst your files in the Finder or Explorer.* The only difference is that we are  seeing the contents in text, rather than visually. Using `cd` is the same as double-clicking on a folder to move around and see a new set of files.
+*This is the same file system as exists when you move around amongst your files in the Finder or Explorer.* The only difference is that we are seeing the contents in text, rather than visually. Using `cd` is the same as double-clicking on a folder to move around and see a new set of files.
 
 Typing the first few letters of where you want to go is usually enough, as the `tab` key will autocomplete. Note that Bash is always *case-sensitive*.
 

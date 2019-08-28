@@ -1,11 +1,8 @@
 ##### Week 02 Contents
-- Presentation: [Setting Up Raspberry Pi Wifi, SSH, and VLC Access, Inclusive Design Conversation](readme.md)
-- New Components: [RGB LED](circuits.md)
+- Presentation: [Installation, Inclusive Design Conversation](readme.md)
 - Code: [Moving around with Terminal](terminal.md)
 - Code: [Python Basics](python-basics.md)
-- Code: [Python Lists and Dicts](python-lists.md)
-- Code: [Python GPIO Control](python-gpio.md)
-- Homework: [Research, Readings, API Access, Programming Practice](homework.md)
+- Homework: [Readings, API Access, Programming Practice](homework.md)
 
 -----
 
@@ -367,6 +364,22 @@ for i in range(10) :
 
 We can create simple textual user interfaces by asking Python to wait to receive input from a user.
 
+* For Python 2*
+```python
+name = raw_input("What is your name?") 
+siblingCount = raw_input("How many siblings do you have?") 
+
+print(name + " has " + siblingCount + "sibling(s)")
+```
+
+Run this, and Python will ask you questions! 
+
+Note that `raw_input()` takes all input as strings, so we did not need to convert `siblingCount` with `str()`. To do math on `siblingCount` on the other hand, we would have needed to convert it with `int()`.
+
+Python 2 also has an `input()` command, which expects *python code* as input, rather than text. It assumes whatever is typed in is Python code, or known variable names. If you would like to use this `input()`, to maintain code compatibilty with Python 3, you would need to enclose any strings in quotations.
+
+
+* For Python 3*
 ```python
 name = input("What is your name?") 
 siblingCount = input("How many siblings do you have?") 
@@ -374,7 +387,7 @@ siblingCount = input("How many siblings do you have?")
 print(name + " has " + str(siblingCount) + "sibling(s)")
 ```
 
-Note that `input()` does not manage datatypes for you and takes all input as strings, so you should always plan on forcing user input into integers or floats as necessary with `int()` and `float()`. We can catch incorrectly typed user input by asking Python to `try` something, and if it fails, printing a useful error message.
+Note that `input()` does not manage datatypes for you and assumes all `input` responses are strings, even numbers. We can also catch incorrectly typed user input by asking Python to `try` something, and if it fails, printing a useful error message.
 
 ```python
 firstNumber = input("Enter the first number to multiply:")
@@ -387,3 +400,6 @@ try :
 except ValueError:
     print("Please only enter numbers!")
 ```
+
+A `ValueError` occurs when we try to do math on words, and so this code structure checks for incorrent user entries.
+
