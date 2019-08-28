@@ -120,6 +120,8 @@ touch /Volumes/boot/ssh
 
 ##### Remote-Controlling Your Raspberry Pi (20 minutes)
 
+Hold on this for a moment! Waiting on classroom setup.
+
 Make sure you are the only one in the classroom doing this step! All Raspberry Pis use the same default network name, so everyone will need to do this step alone to prevent name collisions.
 
 Plug your SD card back into your Raspberry Pi. Plug it into power and turn it on, making sure that its onboard LED glows green. Wait 5 minutes for everything to boot up.
