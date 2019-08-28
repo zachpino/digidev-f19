@@ -8,11 +8,10 @@ Documentation and Resources for the Fall 2019 Illinois Tech Institute of Design 
 	- Homework: [Do some research and readings, and setup your Raspberry Pi](week01/homework.md)
 	
 - [Week 02 · Python Introduction for Embedded Technologies](week02/readme.md) 	
-	- Presentation: [Setting Up Raspberry Pi Wifi, SSH, and VLC Access, Inclusive Design Conversation](week02/readme.md)
-	- New Components: [RGB LED](week02/circuits.md)
+	- Presentation: [Installation, Inclusive Design Conversation](week02/readme.md)
 	- Code: [Moving around with Terminal](week02/terminal.md)
 	- Code: [Python Basics](week02/python-basics.md)
-	- Code: [Python Lists and Dicts](week02/python-lists.md)
-	- Code: [Python GPIO Control](week02/python-gpio.md)
-	- Homework: [Research, Readings, API Access, Programming Practice](week02/homework.md)
+	- Homework: [Readings, API Access, Programming Practice](week02/homework.md)
+	
+
 	
