@@ -72,8 +72,6 @@ We will work with this data next week on our Raspberry Pis in Python, to create 
 
 ##### Raspberry Pi Wifi Setup (15 Minutes)
 
-- Setting Up Raspberry Pi Wifi
-
 Place your Raspberry Pi SD card in the USB reader in your kits, and plug it into your computers. We will need to edit and create some files in the volume that will show up on your computer named "boot" so that our Raspberry Pis can connect to networks automatically, without the need for an HDMI screen, keyboard, and mouse.
 
 In Terminal, type or paste these lines one at a time and hit enter after each.
@@ -120,7 +118,7 @@ touch /Volumes/boot/ssh
 
 -----
 
-### Remote-Controlling Your Raspberry Pi (20 minutes)
+##### Remote-Controlling Your Raspberry Pi (20 minutes)
 
 Make sure you are the only one in the classroom doing this step! All Raspberry Pis use the same default network name, so everyone will need to do this step alone to prevent name collisions.
 
