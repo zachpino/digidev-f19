@@ -204,3 +204,40 @@ hujambo
 rimaykullayki
 ohayo gozaimasu
 ```
+
+
+##### Making Files and Directories
+
+The `>` redirect operator will make a file if it does not already exist. 
+
+> `echo 'hey zach!' > new_file.txt`
+
+> `ls`
+
+```
+new_file.txt
+```
+
+If you want to make an empty file instead, you can use `touch`
+
+
+> `touch newer_file.txt`
+
+> `ls`
+
+```
+new_file.txt
+newer_file.txt
+```
+
+Should you instead want to make a folder in your file system, you can use `mkdir`.
+
+> `mkdir new_folder`
+
+> `ls`
+
+```
+new_folder
+new_file.txt
+newer_file.txt
+```
