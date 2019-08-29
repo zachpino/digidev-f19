@@ -16,11 +16,13 @@ Complete exercises 1, 2, 3, 4 and 8 at [Practice Python](https://www.practicepyt
 
 ##### Readings (2 hours)
 
-- Read [Kat Holmes' *Mismatch*](https://drive.google.com/drive/folders/1lRB-g2c6-mOYRbo-Usb9As9pjDypJPDH?usp=sharing), pages 84 - 123 and prepare for discussion. Please write down *on paper* three questions that this reading provoked in your mind to discuss with your peers.
+- Read this short Guardian article first [*What would a truly disabled-accessible city look like?*](https://www.theguardian.com/cities/2018/feb/14/what-disability-accessible-city-look-like). Before continuing to the other readings this week, try to articulate exactly what Chicago could and should be learning from these other cities. Are these lessons transferrable to our context here in the Great Plains of North America?
 
-- Read this short Guardian article [*What would a truly disabled-accessible city look like?*](https://www.theguardian.com/cities/2018/feb/14/what-disability-accessible-city-look-like). 
+- Read [Kat Holmes' *Mismatch*](https://drive.google.com/drive/folders/1lRB-g2c6-mOYRbo-Usb9As9pjDypJPDH?usp=sharing), pages 84 - 123 and prepare for discussion. In particular, pay attention to the chapter titled "Human-Led, Beyond Human-Centered Design", pages 105-108, which is summed up in the quietly revolutionary first paragraph on page 118. What authority structures is Holmes targeting with these sentences? ID is the birthplace of User-Centered Design, what is her proposal for us? Please write down *on paper* three questions that this reading provoked in your mind to discuss with your peers. 
 
-- Skim this short excerpt *Transportation Patterns and Problems of People with Disabilities* from [*The Future of Disability in America*](https://www.ncbi.nlm.nih.gov/books/NBK11420/). The whole book is available in the shared readings folder. Again, three questions on paper please!
+- Skim this short excerpt *Transportation Patterns and Problems of People with Disabilities* from [*The Future of Disability in America*](https://www.ncbi.nlm.nih.gov/books/NBK11420/). The whole book is available in the shared readings folder. Again, three questions on paper please! 
+
+- We will start class with small group discussion, so please come prepared to prompt one another.
 
 -----
 
@@ -72,6 +74,8 @@ We will work with this data next week on our Raspberry Pis in Python, to create 
 
 ##### Raspberry Pi Wifi Setup (15 Minutes)
 
+(Check out this [video](https://drive.google.com/open?id=1G-7he3ZjmlMHtY3y8lRnAKNDAFfcYqrV)!)
+
 Place your Raspberry Pi SD card in the USB reader in your kits, and plug it into your computer. We will need to edit and create some files in the volume that will show up on your computer named "boot" so that our Raspberry Pis can connect to networks automatically, without the need for an HDMI screen, keyboard, and mouse.
 
 In Terminal, type or paste these lines one at a time and hit enter after each.
@@ -106,6 +110,8 @@ network={
 
 ##### Raspberry Pi SSH Setup (5 Minutes)
 
+(Check out the end of this [video](https://drive.google.com/open?id=1G-7he3ZjmlMHtY3y8lRnAKNDAFfcYqrV)!)
+
 As above, place your Raspberry Pi SD card in the USB reader in your kits, and plug it into your computer. 
 
 *SSH*, an abbreviation for *secure shell*, is a method to control our Raspberry Pi through another computer.
@@ -121,6 +127,8 @@ touch /Volumes/boot/ssh
 -----
 
 ##### Remote-Controlling Your Raspberry Pi (20 minutes)
+
+(Check out this other [video](https://drive.google.com/open?id=1-Bm-F6ziJbH6TFFtvwCztlOSdRPDdMP4)!)
 
 Make sure you are the only one in the classroom doing this step! All Raspberry Pis use the same default network name, so everyone will need to do this step alone to prevent name collisions.
 
