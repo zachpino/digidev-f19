@@ -161,5 +161,5 @@ ssh pi@your-unique-name.local
 Test this! In order to safely turn off your Raspberry Pi if you are logged into it...
 
 ```
-sudo shutdown -r now
+sudo shutdown now
 ```
