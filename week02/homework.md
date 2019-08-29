@@ -72,7 +72,7 @@ We will work with this data next week on our Raspberry Pis in Python, to create 
 
 ##### Raspberry Pi Wifi Setup (15 Minutes)
 
-Place your Raspberry Pi SD card in the USB reader in your kits, and plug it into your computers. We will need to edit and create some files in the volume that will show up on your computer named "boot" so that our Raspberry Pis can connect to networks automatically, without the need for an HDMI screen, keyboard, and mouse.
+Place your Raspberry Pi SD card in the USB reader in your kits, and plug it into your computer. We will need to edit and create some files in the volume that will show up on your computer named "boot" so that our Raspberry Pis can connect to networks automatically, without the need for an HDMI screen, keyboard, and mouse.
 
 In Terminal, type or paste these lines one at a time and hit enter after each.
 
@@ -82,7 +82,7 @@ touch wpa_supplicant.conf
 open -a TextEdit wpa_supplicant.conf
 ```
 
-Copy and paste everything below into the empty file that opens in TextEdit. You can insert your home wifi name and password into the text in the second `network` block so that your Raspberry Pi can connect at home and school! Save the file with File -> Save.
+Copy and paste everything below into the empty file that opens in TextEdit. You can insert your home wifi name and password into the text in the second `network` block so that your Raspberry Pi can connect at home and school! Save the file with File -> Save (you may get a warning about non-versioned storage, which you can disregard).
 
 ```
 ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
@@ -106,6 +106,8 @@ network={
 
 ##### Raspberry Pi SSH Setup (5 Minutes)
 
+As above, place your Raspberry Pi SD card in the USB reader in your kits, and plug it into your computer. 
+
 *SSH*, an abbreviation for *secure shell*, is a method to control our Raspberry Pi through another computer.
 
 Add a file, with no content, named "ssh" to your SD card, to enable SSH.
@@ -120,13 +122,11 @@ touch /Volumes/boot/ssh
 
 ##### Remote-Controlling Your Raspberry Pi (20 minutes)
 
-Hold on this for a moment! Waiting on classroom setup.
-
 Make sure you are the only one in the classroom doing this step! All Raspberry Pis use the same default network name, so everyone will need to do this step alone to prevent name collisions.
 
-Plug your SD card back into your Raspberry Pi. Plug it into power and turn it on, making sure that its onboard LED glows green. Wait 5 minutes for everything to boot up.
+Safely eject your micro SD card, and plug it into your Raspberry Pi. Plug the Raspberry Pi into power and turn it on with the clicky switch if necessary, making sure that its onboard LED flashes green. Wait 5 minutes for everything to boot up.
 
-Then, on your Mac in Terminal, run the following.
+Then, on your Mac, connect to the `pddev` wifi network. The password is `raspberry`. Still on your Mac, ensure you are connected to `pddev`, open Terminal, and run the following command.
 
 ```
 ssh pi@raspberrypi.local
