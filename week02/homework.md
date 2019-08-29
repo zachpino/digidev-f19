@@ -143,7 +143,7 @@ pi@raspberrypi:~$
 Now, to prevent future name collisions, create a new name for your Raspberry Pi using only numbers, hyphens, and letters and echo it into a special file.
 
 ```
-sudo echo "your-unique-name" > /etc/hostname
+sudo bash -c "echo your-unique-name > /etc/hostname"
 ```
 
 Then, type in the following...
