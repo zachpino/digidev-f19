@@ -140,7 +140,7 @@ Then, on your Mac, connect to the `pddev` wifi network. The password is `raspber
 ssh pi@raspberrypi.local
 ```
 
-You will be asked for a password, which is `raspberry` by default.  :strawberry: <- Not a Raspberry, but close.
+You will be asked to type `yes` for security protection, and then you will be asked for a password, which is `raspberry` by default.  :strawberry: <- Not a Raspberry, but close.
 
 After a slight delay, you are now running code on your Raspberry Pi! You know this because Terminal changes your prompt.
 
@@ -166,8 +166,8 @@ This will restart your Raspberry Pi. In order to log into your Raspberry Pi from
 ssh pi@your-unique-name.local
 ```
 
-Test this! In order to safely turn off your Raspberry Pi if you are logged into it...
+Test this! You'll again need to confirm logging in by typing `yes` and entering the `raspberry` password. In order to safely turn off your Raspberry Pi if you are logged into it...
 
 ```
-sudo shutdown -r now
+sudo shutdown now
 ```
