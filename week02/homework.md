@@ -140,15 +140,11 @@ After a slight delay, you are now running code on your Raspberry Pi! You know th
 pi@raspberrypi:~$
 ```
 
-Now, to prevent future name collisions...
+Now, to prevent future name collisions, create a new name for your Raspberry Pi using only numbers, hyphens, and letters and echo it into a special file.
 
 ```
-sudo nano /etc/hostname
+sudo echo "your-unique-name" > /etc/hostname
 ```
-
-This will open a simple file in your Terminal for editing. Replace `raspberrypi` with a unique name (for example "zach-raspberry"), using only numbers, hyphen, and letters.
-
-After typing your unique name, write it down for later reference, and then hold down the control key and press 'x' on your keyboard. The text editing program will ask if you want to save your changes. Press 'y' and hit enter.
 
 Then, type in the following...
 
@@ -156,10 +152,10 @@ Then, type in the following...
 sudo reboot now
 ```
 
-In order to log into your Raspberry Pi from now on, we would type in on your laptop...
+This will restart your Raspberry Pi. In order to log into your Raspberry Pi from now on, we would type on your laptop...
 
 ```
-ssh pi@youruniquename.local
+ssh pi@your-unique-name.local
 ```
 
 Test this! In order to safely turn off your Raspberry Pi if you are logged into it...
