@@ -1,9 +1,11 @@
-##### Week 02 Contents
-- Presentation: [Installation, Inclusive Design Conversation](readme.md)
-- Code: [Moving around with Terminal](terminal.md)
-- Code: [Python Basics](python-basics.md)
-- Homework: [Readings, API Access, Programming Practice](homework.md)
-
+##### Week 03 Contents
+- Presentation: [Inclusive Design Small Group Chats, Electrical Signalling](readme.md)
+- Components: [RGB LED Color Controller](circuits.md)
+- Code: [Python Lists and Dictionaries](python-lists.md)
+- Code: [Python GPIO Control](python-gpio.md)
+- Application: [Train Arrival Warning Alarm](application.md)
+- Homework: [Readings, Other APIs, Programming Practice](homework.md)
+    
 -----
 
 ### Lists and Dictionaries

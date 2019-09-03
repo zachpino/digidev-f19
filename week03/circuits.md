@@ -1,12 +1,11 @@
-##### Week 02 Contents
-- Presentation: [Setting Up Raspberry Pi Wifi, SSH, and VLC Access, Inclusive Design Conversation](readme.md)
-- New Components: [RGB LED](circuits.md)
-- Code: [Moving around with Terminal](terminal.md)
-- Code: [Python Basics](python-basics.md)
-- Code: [Python Lists and Dicts](python-lists.md)
+##### Week 03 Contents
+- Presentation: [Inclusive Design Small Group Chats, Electrical Signalling](readme.md)
+- Components: [RGB LED Color Controller](circuits.md)
+- Code: [Python Lists and Dictionaries](python-lists.md)
 - Code: [Python GPIO Control](python-gpio.md)
-- Homework: [Research, Readings, API Access, Programming Practice](homework.md)
-
+- Application: [Train Arrival Warning Alarm](application.md)
+- Homework: [Readings, Other APIs, Programming Practice](homework.md)
+	
 -----
 
 ### Components
@@ -27,6 +26,6 @@ Review [additive color mixing principles](https://en.wikipedia.org/wiki/Additive
 
 Control color with Python by making a few connections. Check out the code for this circuit on the [GPIO Control](python-gpio.md) page.
 
-To understand why resistors are needed in this circuit, and why the 220 ohm resistor was chosen, take a look at this excellent [Sparkfun tutorial](https://learn.sparkfun.com/tutorials/voltage-current-resistance-and-ohms-law/electricity-basics).
+To understand why resistors are needed in this circuit, and why the 220 ohm resistor was chosen, take a look at this excellent [Sparkfun explainer](https://learn.sparkfun.com/tutorials/voltage-current-resistance-and-ohms-law/electricity-basics).
 
 ![led controller](color-controller-bb.png)
