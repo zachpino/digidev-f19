@@ -1,11 +1,9 @@
 ##### Week 03 Contents
 - Presentation: [Inclusive Design Small Group Chats, Electrical Signalling](readme.md)
-- Components: [RGB LED Color Controller](circuits.md)
 - Code: [Python Lists and Dictionaries](python-lists.md)
-- Code: [Python GPIO Control](python-gpio.md)
 - Application: [Train Arrival Warning Alarm](application.md)
 - Homework: [Readings, Other APIs, Programming Practice](homework.md)
-	
+
 -----
 
 ### Homework for September 10
@@ -22,7 +20,7 @@ Complete exercises 7, 10, 13, and 14 at [Practice Python](https://www.practicepy
 
 - Read [Kat Holmes' *Mismatch*](https://drive.google.com/drive/folders/1lRB-g2c6-mOYRbo-Usb9As9pjDypJPDH?usp=sharing), pages 138 - 151 and prepare for discussion (we're skipping some chapters full of examples — worth reading if you have time!). Notably, the final paragraph on page 142 offers a lovely summation of why inclusive design is natively so hard to learn, teach, and implement. As designers, we often pride ourselves on our ability to engage *uncertainty*, and yet Holmes blames an over-dependency on certainty as a prime motivator for exclusionary thinking and doing. How does this feel? How might our design process adapt to accomodate less certainty?
 
-- We will start class with small group discussion on *teaching inclusive design praxis*, so please come prepared to prompt one another.
+- We will start class with small group discussion on *teaching inclusive design praxis* and *creating inclusive design guidelines*, so please come prepared to prompt one another.
 
 -----
 
@@ -44,9 +42,4 @@ Using Python knowledge built up over the last two weeks, try to write individual
 4. Which stations have 0 bikes available?
 5. Which stations are full of bikes?
 
------
-
-##### Train Arrival Warning Alarm (1.5 hours)
-
-For homework, you will improve your Raspberry Pi alarm, but that will depend on how far we get in class! Come back soon for more info! 
-
+Additional Tutorial Code Coming Soon!

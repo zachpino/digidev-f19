@@ -15,9 +15,7 @@ Documentation and Resources for the Fall 2019 Illinois Tech Institute of Design 
 		
 - [Week 03 · Python Introduction Continued](week03/readme.md) 	
 	- Presentation: [Inclusive Design Small Group Chats, Electrical Signalling](week03/readme.md)
-	- Components: [RGB LED Color Controller](week03/circuits.md)
 	- Code: [Python Lists and Dictionaries](week03/python-lists.md)
-	- Code: [Python GPIO Control](week03/python-gpio.md)
 	- Application: [Train Arrival Warning Alarm](week03/application.md)
 	- Homework: [Readings, Other APIs, Programming Practice](week03/homework.md)
 	
