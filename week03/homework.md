@@ -55,6 +55,7 @@ Using Python knowledge built up over the last two weeks, try to write individual
 4. Which stations are **full of bikes**?
 
 Bonus Harder Questions! 
+
 5. What station(s) has the **most docks** total?
 6. What station(s) *that has active docks* has the **fewest docks total**?
 
