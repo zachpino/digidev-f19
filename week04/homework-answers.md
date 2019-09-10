@@ -8,9 +8,11 @@
 
 All of the answers below will vary depending on when the code is run.
 
+-----
+
 1. How many **active bikes** are available in the entire Divvy system?
 
-Total Active Bikes (not counting checked-out bikes): 4274
+	Total Active Bikes (not counting checked-out bikes): 4274
 
 ```python
 import requests
