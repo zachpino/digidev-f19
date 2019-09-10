@@ -72,9 +72,11 @@ for i in range ( len (statusData) ):
 print("Total Active Bikes (not counting checked-out bikes): " + str(activeBikeCount))
 ```
 
+-----
+
 2. How many **broken ("disabled") bikes** are there in the entire Divvy system?
 
-Total Disabled Bikes: 218
+	Total Disabled Bikes: 218
 
 ```python
 import requests
@@ -134,13 +136,14 @@ for i in range ( len (statusData) ):
 print("Total Disabled Bikes: " + str(disabledBikeCount))
 ```
 
+-----
+
 3. Which stations have **no bikes available**?
 
-No Bikes Available:
-
-```
-['Racine Ave & 18th St', 'Aberdeen St & Jackson Blvd', 'McClurg Ct & Illinois St', 'Larrabee St & Menomonee St', 'Ashland Ave & Augusta Blvd', 'Marshfield Ave & Cortland St', 'Wabash Ave & Roosevelt Rd', 'Eckhart Park', 'Carpenter St & Huron St', 'Sheffield Ave & Willow St', 'Clark St & Armitage Ave', 'Sedgwick St & North Ave', 'Blackstone Ave & Hyde Park Blvd', 'Damen Ave & Chicago Ave', 'Damen Ave & Division St', 'Clybourn Ave & Division St', 'Clark St & Lincoln Ave', 'Sedgwick St & Webster Ave', 'Southport Ave & Belmont Ave', 'Clark St & Wellington Ave', 'Claremont Ave & Hirsch St', 'Rush St & Cedar St', 'Wells St & Polk St', 'Clark St & Elm St', 'Stave St & Armitage Ave', 'Emerald Ave & 28th St', 'Damen Ave & Grand Ave', 'Halsted St & Willow St', 'Sedgwick St & Schiller St', 'MLK Jr Dr & 29th St', 'Michigan Ave & 18th St', 'Ashland Ave & Grand Ave', 'Larrabee St & Armitage Ave', 'Wells St & Concord Ln', 'Wells St & Evergreen Ave', 'Seeley Ave & Roscoe St', 'Damen Ave & Charleston St', 'Lakeview Ave & Fullerton Pkwy', 'Greenview Ave & Diversey Pkwy', 'Loomis St & Lexington St', 'Stockton Dr & Wrightwood Ave', 'Burling St (Halsted) & Diversey Pkwy (Temp)', 'Ashland Ave & Blackhawk St', 'Emerald Ave & 31st St', 'Racine Ave & Wrightwood Ave', 'Halsted St & Wrightwood Ave', 'Jeffery Blvd & 76th St', 'Shields Ave & 28th Pl', 'Shields Ave & 31st St', 'Ellis Ave & 53rd St', 'California Ave & 23rd Pl', 'Broadway & Thorndale Ave', 'Damen Ave & Foster Ave', 'Throop St & 52nd St', 'Western Blvd & 48th Pl', 'Wood St & Chicago Ave (*)', 'Western Ave & Fillmore St (*)', 'Wood St & Augusta Blvd']
-```
+	No Bikes Available:
+	```
+	['Racine Ave & 18th St', 'Aberdeen St & Jackson Blvd', 'McClurg Ct & Illinois St', 'Larrabee St & Menomonee St', 'Ashland Ave & Augusta Blvd', 'Marshfield Ave & Cortland St', 'Wabash Ave & Roosevelt Rd', 'Eckhart Park', 'Carpenter St & Huron St', 'Sheffield Ave & Willow St', 'Clark St & Armitage Ave', 'Sedgwick St & North Ave', 'Blackstone Ave & Hyde Park Blvd', 'Damen Ave & Chicago Ave', 'Damen Ave & Division St', 'Clybourn Ave & Division St', 'Clark St & Lincoln Ave', 'Sedgwick St & Webster Ave', 'Southport Ave & Belmont Ave', 'Clark St & Wellington Ave', 'Claremont Ave & Hirsch St', 'Rush St & Cedar St', 'Wells St & Polk St', 'Clark St & Elm St', 'Stave St & Armitage Ave', 'Emerald Ave & 28th St', 'Damen Ave & Grand Ave', 'Halsted St & Willow St', 'Sedgwick St & Schiller St', 'MLK Jr Dr & 29th St', 'Michigan Ave & 18th St', 'Ashland Ave & Grand Ave', 'Larrabee St & Armitage Ave', 'Wells St & Concord Ln', 'Wells St & Evergreen Ave', 'Seeley Ave & Roscoe St', 'Damen Ave & Charleston St', 'Lakeview Ave & Fullerton Pkwy', 'Greenview Ave & Diversey Pkwy', 'Loomis St & Lexington St', 'Stockton Dr & Wrightwood Ave', 'Burling St (Halsted) & Diversey Pkwy (Temp)', 'Ashland Ave & Blackhawk St', 'Emerald Ave & 31st St', 'Racine Ave & Wrightwood Ave', 'Halsted St & Wrightwood Ave', 'Jeffery Blvd & 76th St', 'Shields Ave & 28th Pl', 'Shields Ave & 31st St', 'Ellis Ave & 53rd St', 'California Ave & 23rd Pl', 'Broadway & Thorndale Ave', 'Damen Ave & Foster Ave', 'Throop St & 52nd St', 'Western Blvd & 48th Pl', 'Wood St & Chicago Ave (*)', 'Western Ave & Fillmore St (*)', 'Wood St & Augusta Blvd']
+	```
 
 ```python
 import requests
@@ -204,13 +207,14 @@ for i in range ( len (statusData) ):
 print("No Bikes Available: " + str(noBikes))
 ```
 
+-----
 
 4. Which stations are **full of bikes**?
 
-Stations full of bikes: 
-```
-['Kimball Ave & Belmont Ave', 'Bosworth Ave & Howard St', 'Leavitt St & Belmont Ave (*)']
-```
+	Stations full of bikes: 
+	```
+	['Kimball Ave & Belmont Ave', 'Bosworth Ave & Howard St', 'Leavitt St & Belmont Ave (*)']
+	```
 
 ```python
 import requests
@@ -277,14 +281,16 @@ for i in range ( len (statusData) ):
 print("Stations full of bikes: " + str(fullBikes))
 ```
 
+-----
+
 5. What station(s) has the **most docks** total?
 
-Lots of ways to do this [more efficiently](https://stackoverflow.com/questions/5320871/in-list-of-dicts-find-min-value-of-a-common-dict-field), but we can use a series of simple list and dictionary manipulations to find the answer.
+	Lots of ways to do this [more efficiently](https://stackoverflow.com/questions/5320871/in-list-of-dicts-find-min-value-of-a-common-dict-field), but we can use a series of simple list and dictionary manipulations to find the answer.
 
-```
-Highest dock count:55
-The stations with the highest dock count:['Shedd Aquarium', 'Field Museum']
-``` 
+	```
+	Highest dock count:55
+	The stations with the highest dock count:['Shedd Aquarium', 'Field Museum']
+	``` 
 
 ```python
 import requests
@@ -362,14 +368,16 @@ print("Highest dock count:" + str(highestDockCount))
 print("The stations with the highest dock count:" + str(highestDockStations))
 ```
 
+-----
+
 6. What station(s) *that has active docks* has the **fewest docks total**?
 
-Same model as question 5, but a conditional included.
+	Same model as question 5, but a conditional included.
 
-```
-Lowest dock count:6
-The stations with the lowest dock count:['Western Ave & 24th St', 'Damen Ave & 51st St', 'Phillips Ave & 79th St', 'South Chicago Ave & Elliot Ave']
-```
+	```
+	Lowest dock count:6
+	The stations with the lowest dock count:['Western Ave & 24th St', 'Damen Ave & 51st St', 'Phillips Ave & 79th St', 'South Chicago Ave & Elliot Ave']
+	```
 
 ```python
 import requests
