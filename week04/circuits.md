@@ -1,11 +1,10 @@
-##### Week 03 Contents
-- Presentation: [Inclusive Design Small Group Chats, Electrical Signalling](readme.md)
-- Components: [RGB LED Color Controller](circuits.md)
-- Code: [Python Lists and Dictionaries](python-lists.md)
+##### Week 04 Contents
+- Presentation: [Electrical Signalling, Inclusive Carshare+Design Principles](readme.md)
+- Components: [RGB LED Circuit](circuits.md)
+- Homework Review: [Divvy API Access Code](homework-answers.md)
 - Code: [Python GPIO Control](python-gpio.md)
-- Application: [Train Arrival Warning Alarm](application.md)
-- Homework: [Readings, Other APIs, Programming Practice](homework.md)
-	
+- Homework: TBD Based on Class Progress
+
 -----
 
 ### Components
