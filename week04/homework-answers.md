@@ -1,8 +1,9 @@
-##### Week 03 Contents
-- Presentation: [APIs](readme.md)
-- Code: [Python Lists and Dictionaries](python-lists.md)
-- Application: [Train Arrival Warning Alarm](application.md)
-- Homework: [Readings, Other APIs, Programming Practice](homework.md)
+##### Week 04 Contents
+- Presentation: [Electrical Signalling, Inclusive Carshare+Design Principles](readme.md)
+- Components: [RGB LED Circuit](circuits.md)
+- Homework Review: [Divvy API Access Code](homework-answers.md)
+- Code: [Python GPIO Control](python-gpio.md)
+- Homework: TBD Based on Class Progress
 
 -----
 
