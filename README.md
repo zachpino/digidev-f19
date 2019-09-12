@@ -21,7 +21,14 @@ Documentation and Resources for the Fall 2019 Illinois Tech Institute of Design 
 	
 - [Week 04 · Data+Python+Electronics](week04/readme.md) 	
 	- Presentation: [Electrical Signalling, Inclusive Carshare+Design Principles](week04/readme.md)
-	- Components: [RGB LED Circuit](week04/circuits.md)
+	- Components: [Multi LED Circuit](week04/circuits.md)
 	- Homework Review: [Divvy API Access Code](week04/homework-answers.md)
 	- Code: [Python GPIO Control](week04/python-gpio.md)
-	- Homework: TBD Based on Class Progress
+	- Homework: [Transit Availability Visualizer](week04/homework.md)
+
+
+- Presentation: [Electrical Signalling, Inclusive Carshare+Design Principles](readme.md)
+- Components: [Multi LED Circuit](circuits.md)
+- Homework Review: [Divvy API Access Code](homework-answers.md)
+- Code: [Python GPIO Control](python-gpio.md)
+- Homework: [Transit Availability Visualizer](homework.md)
