@@ -1,6 +1,6 @@
 ##### Week 04 Contents
 - Presentation: [Electrical Signalling, Inclusive Carshare+Design Principles](readme.md)
-- Components: [Multi LED Circuit](circuits.md)
+- Components: [RGB LED Circuit](circuits.md)
 - Homework Review: [Divvy API Access Code](homework-answers.md)
 - Code: [Python GPIO Control](python-gpio.md)
 - Homework: TBD Based on Class Progress
@@ -15,7 +15,7 @@ We can at last bring together our Python learnings and our small electronics exp
 
 ##### Digital Control
 
-If we wanted to blink and LED on and off, we could run the following code. Look closely at the comments for more information. Not the `while True :` loop which continues running this code until you press `control + c` on your keyboards.
+If we wanted to blink and LED on and off, we could run the following code. Look closely at the comments for more information.
 
 ```python
 # import modules
@@ -23,7 +23,7 @@ import RPi.GPIO as GPIO
 import time  
 
 #store which pin is attached to our LED
-ledPin = 21
+led = 21
 
 #ignore some default warnings that will always pop up
 GPIO.setwarnings(False)
@@ -49,12 +49,12 @@ try :
     #Run forever! 
     while True :
         #turn on the LED by sending voltage to its pin
-        GPIO.output(ledPin, GPIO.HIGH) 
+        GPIO.output(led, GPIO.HIGH) 
         #do nothing for one second
         time.sleep(1)             
 
         #turn off the LED by cutting voltage to its pin  
-        GPIO.output(ledPin, GPIO.LOW) 
+        GPIO.output(8, GPIO.LOW) 
         #do nothing for one second
         time.sleep(1)                  
 
@@ -63,4 +63,66 @@ except KeyboardInterrupt:
     print("quitting...")
     # safely reset all pins
     GPIO.cleanup()  
+```
+
+##### PWM Control
+
+Very often, we want more control than the binary on/off that `GPIO.HIGH` and `GPIO.LOW` allow. For this we want PWM, which is especially useful for color control and animation with RGB LEDs. Check out [this tutorial](https://electronicshobbyists.com/raspberry-pi-pwm-tutorial-control-brightness-of-led-and-servo-motor/) for a review of what we discussed in class and an in-depth discussion of PWM signals.
+
+```python
+#necessary modules
+import RPi.GPIO as GPIO     
+import time
+
+#store pin locations in variables
+r_pin = 26
+g_pin = 19
+b_pin = 13
+
+#use BCM numbering system
+GPIO.setmode(GPIO.BCM)          
+
+#set all needed pins as output
+GPIO.setup(r_pin, GPIO.OUT)   
+GPIO.setup(g_pin, GPIO.OUT)   
+GPIO.setup(b_pin, GPIO.OUT)   
+
+#create a PWM object for each pin, with 100 as its max duty load
+r_pwm = GPIO.PWM(r_pin, 100)    
+g_pwm = GPIO.PWM(g_pin, 100)    
+b_pwm = GPIO.PWM(b_pin, 100)    
+
+#startup the PWM signal at 0 duty load
+r_pwm.start(0)
+g_pwm.start(0)
+b_pwm.start(0)
+
+#make sure we can safely exit our program by looking out for errors
+try :
+    #loop forever
+    while True :
+        #count up to 100
+        for i in range(100) :
+            #change PWM pulse
+            r_pwm.ChangeDutyCycle(i)
+            b_pwm.ChangeDutyCycle(100 - i)
+            #delay a tiny bit
+            time.sleep(0.01)
+        
+        #count down to 100    
+        for i in range(100,0,-1) : 
+            #change PWM pulse
+            r_pwm.ChangeDutyCycle(i)
+            b_pwm.ChangeDutyCycle(100 - i)
+            #delay a tiny bit
+            time.sleep(0.01)
+
+# If keyboard Interrupt (CTRL-C) is pressed
+except KeyboardInterrupt:
+    print("quitting...")
+    # safely reset all pins
+    r_pwm.stop()      
+    g_pwm.stop()      
+    b_pwm.stop()      
+    GPIO.cleanup()
 ```

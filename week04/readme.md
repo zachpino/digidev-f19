@@ -1,6 +1,6 @@
 ##### Week 04 Contents
 - Presentation: [Electrical Signalling, Inclusive Carshare+Design Principles](readme.md)
-- Components: [RGB LED Circuit](circuits.md)
+- Components: [Multi LED Circuit](circuits.md)
 - Homework Review: [Divvy API Access Code](homework-answers.md)
 - Code: [Python GPIO Control](python-gpio.md)
 - Homework: TBD Based on Class Progress

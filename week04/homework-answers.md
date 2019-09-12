@@ -1,6 +1,6 @@
 ##### Week 04 Contents
 - Presentation: [Electrical Signalling, Inclusive Carshare+Design Principles](readme.md)
-- Components: [RGB LED Circuit](circuits.md)
+- Components: [Multi LED Circuit](circuits.md)
 - Homework Review: [Divvy API Access Code](homework-answers.md)
 - Code: [Python GPIO Control](python-gpio.md)
 - Homework: TBD Based on Class Progress
@@ -343,7 +343,7 @@ dockCounts = []
 for i in range ( len (statusData) ):
 
 	#capture the number of docks and add it to our list
-	dockCounts.append( int( statusData[i]["num_docks_available"] + statusData[i]["num_docks_disabled"] ) )
+	dockCounts.append( int( statusData[i]["num_docks_available"]) + int(statusData[i]["num_docks_disabled"] ) )
 
 #determine what the highest number of docks is in the list
 highestDockCount = max(dockCounts)
@@ -355,7 +355,7 @@ highestDockStations = []
 for i in range ( len (statusData) ):
 
 	#check if this station has the same number of docks as our highest dock number
-	if int(statusData[i]["num_docks_available"] + statusData[i]["num_docks_disabled"]) == highestDockCount :
+	if (int(statusData[i]["num_docks_available"]) + int( statusData[i]["num_docks_disabled"]) ) == highestDockCount :
 		# capture the station ID number of the highest dock station station
 		stationID = statusData[i]["station_id"]
 		# find the readable address of the highest dock station in our ids dictionary
@@ -430,8 +430,8 @@ dockCounts = []
 for i in range ( len (statusData) ):
 
 	#capture the number of docks and add it to our list
-	if int( statusData[i]["num_docks_available"] + statusData[i]["num_bikes_available"] ) > 0 : 
-		dockCounts.append( int( statusData[i]["num_docks_available"] + statusData[i]["num_bikes_available"] ) )
+	if ( int( statusData[i]["num_docks_available"]) + int(statusData[i]["num_bikes_available"] ) ) > 0 : 
+		dockCounts.append( int( statusData[i]["num_docks_available"]) + int(statusData[i]["num_bikes_available"] ) )
 
 #determine what the highest number of docks is in the list
 lowestDockCount = min(dockCounts)
@@ -443,7 +443,7 @@ lowestDockStations = []
 for i in range ( len (statusData) ):
 
 	#check if this station has the same number of docks as our lowest dock number
-	if int(statusData[i]["num_docks_available"] + statusData[i]["num_bikes_available"]) == lowestDockCount :
+	if ( int(statusData[i]["num_docks_available"]) + int(statusData[i]["num_bikes_available"]) ) == lowestDockCount :
 		# capture the station ID number of the highest dock station station
 		stationID = statusData[i]["station_id"]
 		# find the readable address of the highest dock station in our ids dictionary
@@ -455,4 +455,187 @@ for i in range ( len (statusData) ):
 #see results! 			
 print("Lowest dock count:" + str(lowestDockCount))	
 print("The stations with the lowest dock count:" + str(lowestDockStations))
+```
+
+-----
+
+### The Romano-Ichikawa Approach
+
+	A different method to questions 5 and 6 came up in class — which is significantly more efficient (it only needs to loop once!).
+
+	```
+	Highest dock count:55
+	The stations with the highest dock count:['Field Museum', 'Columbus Dr & Randolph St']
+	```
+
+```python
+	import requests
+	import json
+	from datetime import datetime
+	import time
+
+	#construct API URLs
+	#this API associates a station ID number with its address and longitude, latitude coordinate.
+	infoUrl = "https://gbfs.divvybikes.com/gbfs/en/station_information.json"
+	#this API gives the current bike counts at each station, but only identifies each station by an id number.
+	statusUrl = "https://gbfs.divvybikes.com/gbfs/es/station_status.json"
+
+	#accessing the Divvy API requires us to identify our computer as though we were a web browser. Weird. This is called a "header," and is an encoding for how browsers identify themselves.
+	headers = {'User-Agent': 'Safari/537.36'}
+
+	########## Get Station Addresses ##########
+
+	#ask information API for data
+	infoResponse = requests.get(infoUrl, headers=headers)
+
+	#parse data as json and access just the data we need
+	infoData = infoResponse.json()["data"]["stations"]
+
+	#create an empty dictionary
+	ids = {}
+
+	#loop through the station information
+	for i in range ( len (infoData) ):
+		
+		#save the station id as a variable
+		index = (infoData[i]["station_id"])
+		
+		#create a new key for each station with its id number, and associate its address with that key
+		ids[index] = infoData[i]["name"]
+
+	########## Get Station Current State ##########
+
+	#access status API
+	statusResponse = requests.get(statusUrl, headers=headers)
+
+	#parse data as json and throw out unnecessary data
+	statusData = statusResponse.json()["data"]["stations"]
+
+	#we will start our search for maximums at zero
+	highestDockCount = 0
+
+	#create list of stations that match the highest dock count
+	highestDockStations = []
+
+	#loop through the stations again!
+	for i in range ( len (statusData) ):
+
+		#check if this station has a larger number of total docks than our previously encountered highest dock number
+		#we need to capture the name of the station, delete our previously logged station names, and update counter
+		if (int(statusData[i]["num_docks_available"]) + int(statusData[i]["num_bikes_available"])) >  highestDockCount :
+			
+			#####find the name of the station and add it to the list
+			# capture the station ID number of the highest dock station station
+			stationID = statusData[i]["station_id"]
+			# find the readable address of the highest dock station in our ids dictionary
+			stationAddress = ids[stationID]
+			#add the highest dock station address to our list
+			highestDockStations.append(stationAddress)
+
+			##### wipe our list of previous stations, which had a smaller number of total docks
+			del(highestDockStations[:])
+			
+			##### update the counter to reflect our new max dock number
+			highestDockCount = int(statusData[i]["num_docks_available"]) + int(statusData[i]["num_bikes_available"])
+		
+		#check if this station has the *same* number of docks as our max dock number
+		#in this situation, we only need to capture the name of the station
+		elif (int(statusData[i]["num_docks_available"]) + int(statusData[i]["num_bikes_available"])) ==  highestDockCount :	
+			#####find the name of the station and add it to the list
+			# capture the station ID number of the highest dock station station
+			stationID = statusData[i]["station_id"]
+			# find the readable address of the highest dock station in our ids dictionary
+			stationAddress = ids[stationID]
+			#add the highest dock station address to our list
+			highestDockStations.append(stationAddress)
+
+
+	#see results! 			
+	print("Highest dock count:" + str(highestDockCount))	
+	print("The stations with the highest dock count:" + str(highestDockStations))
+```
+
+-----
+
+### The Jin Approach
+
+Another additional method to questions 5 and 6 was also mentioned in passing — which is the absolute most efficient method (it harnesses Python's multithreading abilities) using [lambda and filter expressions](https://stackoverflow.com/questions/5320871/in-list-of-dicts-find-min-value-of-a-common-dict-field)).
+
+These are hard to understand, but super fast! We'll talk about these in future weeks.
+
+	```
+	Highest dock count:55
+	The stations with the highest dock count:['Field Museum', 'Columbus Dr & Randolph St']
+	```
+
+```python
+import requests
+import json
+from datetime import datetime
+import time
+
+#construct API URLs
+#this API associates a station ID number with its address and longitude, latitude coordinate.
+infoUrl = "https://gbfs.divvybikes.com/gbfs/en/station_information.json"
+#this API gives the current bike counts at each station, but only identifies each station by an id number.
+statusUrl = "https://gbfs.divvybikes.com/gbfs/es/station_status.json"
+
+#accessing the Divvy API requires us to identify our computer as though we were a web browser. Weird. This is called a "header," and is an encoding for how browsers identify themselves.
+headers = {'User-Agent': 'Safari/537.36'}
+
+########## Get Station Addresses ##########
+
+#ask information API for data
+infoResponse = requests.get(infoUrl, headers=headers)
+
+#parse data as json and access just the data we need
+infoData = infoResponse.json()["data"]["stations"]
+
+#create an empty dictionary
+ids = {}
+
+#loop through the station information
+for i in range ( len (infoData) ):
+	
+	#save the station id as a variable
+	index = (infoData[i]["station_id"])
+	
+	#create a new key for each station with its id number, and associate its address with that key
+	ids[index] = infoData[i]["name"]
+
+########## Get Station Current State ##########
+
+#access status API
+statusResponse = requests.get(statusUrl, headers=headers)
+
+#parse data as json and throw out unnecessary data
+statusData = statusResponse.json()["data"]["stations"]
+
+#get the single highest station dictionary
+singleHighestDock = max(statusData, key=lambda station: int(station["num_docks_available"]) + int(station["num_bikes_available"]) )
+
+#get the actual numbers of docks
+highestDockCount = int(singleHighestDock["num_docks_available"]) + int(singleHighestDock["num_bikes_available"])
+
+#create list of stations that match the highest dock count by filtering the list of station data based on the discovered max adn converting the resulting *filter* object into a list.
+highestDockStationDicts = list(filter(lambda station: (int(station["num_docks_available"]) + int(station["num_bikes_available"]) == highestDockCount), statusData))
+
+#list to hold names of high dock stations
+highestDockStations = []
+
+#loop through the stations that matched our discovered highest dock count...
+for i in range ( len (highestDockStationDicts) ):
+
+	#####find the name of the station and add it to the list
+	# capture the station ID number of the highest dock station station
+	stationID = highestDockStationDicts[i]["station_id"]
+	# find the readable address of the highest dock station in our ids dictionary
+	stationAddress = ids[stationID]
+	#add the highest dock station address to our list
+	highestDockStations.append(stationAddress)
+
+#see results! 			
+print("Highest dock count:" + str(highestDockCount))	
+print("The stations with the highest dock count:" + str(highestDockStations))
+
 ```
