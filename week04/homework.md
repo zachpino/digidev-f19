@@ -13,6 +13,8 @@
 
 Review [list and dictionary operations](python-lists.md).
 
+Check out Sparkfun's awesome [Ohm's Law](https://learn.sparkfun.com/tutorials/voltage-current-resistance-and-ohms-law/ohms-law) video and intro.
+
 -----
 
 ##### Readings (none if you're caught up!)
