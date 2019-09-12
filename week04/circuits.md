@@ -3,7 +3,7 @@
 - Components: [Multi LED Circuit](circuits.md)
 - Homework Review: [Divvy API Access Code](homework-answers.md)
 - Code: [Python GPIO Control](python-gpio.md)
-- Homework: TBD Based on Class Progress
+- Homework: [Transit Availability Visualizer](homework.md)
 
 -----
 
