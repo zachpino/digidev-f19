@@ -558,11 +558,6 @@ Another additional method to questions 5 and 6 was also mentioned in passing —
 
 These are hard to understand, but super fast! We'll talk about these in future weeks.
 
-	```
-	Highest dock count:55
-	The stations with the highest dock count:['Field Museum', 'Columbus Dr & Randolph St']
-	```
-
 ```python
 import requests
 import json
