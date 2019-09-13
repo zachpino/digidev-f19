@@ -461,12 +461,7 @@ print("The stations with the lowest dock count:" + str(lowestDockStations))
 
 ### The Romano-Ichikawa Approach
 
-	A different method to questions 5 and 6 came up in class — which is significantly more efficient (it only needs to loop once!).
-
-	```
-	Highest dock count:55
-	The stations with the highest dock count:['Field Museum', 'Columbus Dr & Randolph St']
-	```
+A different method to questions 5 and 6 came up in class — which is significantly more efficient (it only needs to loop once!).
 
 ```python
 	import requests
