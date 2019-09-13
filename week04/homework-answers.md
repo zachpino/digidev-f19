@@ -554,7 +554,7 @@ A different method to questions 5 and 6 came up in class — which is significan
 
 ### The Jin Approach
 
-Another additional method to questions 5 and 6 was also mentioned in passing — which is the absolute most efficient method (it harnesses Python's multithreading abilities) using [lambda and filter expressions](https://stackoverflow.com/questions/5320871/in-list-of-dicts-find-min-value-of-a-common-dict-field)).
+Another additional method to questions 5 and 6 was also mentioned in passing — which is the absolute most efficient method (it harnesses Python's multithreading abilities) using [lambda and filter expressions](https://stackoverflow.com/questions/5320871/in-list-of-dicts-find-min-value-of-a-common-dict-field).
 
 These are hard to understand, but super fast! We'll talk about these in future weeks.
 
