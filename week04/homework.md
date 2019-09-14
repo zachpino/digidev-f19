@@ -11,7 +11,7 @@
 
 ##### Programming Practice (1 hours)
 
-Review [list and dictionary operations](python-lists.md).
+Review [list and dictionary operations](../week03/python-lists.md).
 
 Check out Sparkfun's awesome [Ohm's Law](https://learn.sparkfun.com/tutorials/voltage-current-resistance-and-ohms-law/ohms-law) video and intro.
 
