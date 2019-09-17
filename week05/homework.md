@@ -13,7 +13,7 @@
 
 These will seem divergent from our arc so far, but they are whitepapers that strive to use data to model transit accessibility (but with a very different definition of 'accessibility' than we've been orbiting). Many of our next steps will be located in a model-building space as we attempt to construct a definitional *formula for accessible transit* and what its inputs might be.
 
-- [Modeling spatial accessibility to parks: a national study ](https://ij-healthgeographics.biomedcentral.com/articles/10.1186/1476-072X-10-31)
+- [Modeling spatial accessibility to parks: a national study](https://ij-healthgeographics.biomedcentral.com/articles/10.1186/1476-072X-10-31)
 https://www.brookings.edu/research/developing-common-narrative-urban-accessibility-planning/
 - [Modeling Transport Accessibility with Open Data: Case Study of St. Petersburg](https://www.sciencedirect.com/science/article/pii/S1877050916326916) (click on "Download full text in PDF")
 - [Understanding Transportation Accessibility of Metropolitan Chicago Through Interactive Visualization](https://www.evl.uic.edu/documents/yin_chicago_urbangis2015.pdf)
