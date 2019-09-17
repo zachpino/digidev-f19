@@ -20,5 +20,4 @@ Let's discuss the readings [from previous weeks](../week02/homework.md) with one
 Highly recommended readings for additional technical context and learnings:
 
 - Sparkfun's [*What is Electricity*](https://learn.sparkfun.com/tutorials/what-is-electricity/all)
-- Sparkfun's [*Pulse Width Modulation*](https://learn.sparkfun.com/tutorials/pulse-width-modulation/all)
 - Sparkfun's [*Ohm's Law*](https://learn.sparkfun.com/tutorials/voltage-current-resistance-and-ohms-law/ohms-law)

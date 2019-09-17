@@ -25,3 +25,10 @@ Documentation and Resources for the Fall 2019 Illinois Tech Institute of Design 
 	- Homework Review: [Divvy API Access Code](week04/homework-answers.md)
 	- Code: [Python GPIO Control](week04/python-gpio.md)
 	- Homework: [Transit Availability Visualizer](week04/homework.md)
+
+- [Week 05 · Multi-Dimensionality](week05/readme.md) 	
+	- Presentation: [Inclusive Bus Stop Principles and Design, PWM Signalling](week05/readme.md)
+	- Components: [RGB Color Control Circuit](week05/circuits.md)
+	- Code: [Python PWM Control](week05/python-gpio.md)
+	- Homework Review: [Transit Availability Visualizer](week05/homework-answers.md)
+	- Homework: [Transit Availability Visualizer Add-Ons](week05/homework.md)
