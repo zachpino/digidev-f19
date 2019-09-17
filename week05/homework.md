@@ -9,7 +9,7 @@
 
 ### Homework for September 17
 
-##### Readings 
+##### Readings (1 hour)
 
 These will seem divergent from our arc so far, but they are whitepapers that strive to use data to model transit accessibility (but with a very different definition of 'accessibility' than we've been orbiting). Many of our next steps will be located in a model-building space as we attempt to construct a definitional *formula for accessible transit* and what its inputs might be.
 
@@ -36,3 +36,8 @@ Grab a new API Key (so silly that the city has two different key servers!), skim
 
 Afterwards, integrate data from the the Bus Tracker API into your Transit Visualizer from last week, and swap out the single color LEDs for your RGB LED. Develop a language of color to communicate the contextual health of the transit area around your living place.
 
+-----
+
+##### Finish Transit Stop Exercise (2-3 hours)
+
+Finish preparing your design guidelines and recommendations document for presentation next week.

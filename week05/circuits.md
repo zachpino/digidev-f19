@@ -1,9 +1,9 @@
-##### Week 04 Contents
-- Presentation: [Electrical Signalling, Inclusive Carshare+Design Principles](readme.md)
-- Components: [RGB LED Circuit](circuits.md)
-- Homework Review: [Divvy API Access Code](homework-answers.md)
-- Code: [Python GPIO Control](python-gpio.md)
-- Homework: TBD Based on Class Progress
+##### Week 05 Contents
+- Presentation: [Inclusive Bus Stop Principles and Design, PWM Signalling](readme.md)
+- Components: [RGB Color Control Circuit](circuits.md)
+- Code: [Python PWM Control](python-gpio.md)
+- Homework Review: [Transit Availability Visualizer](homework-answers.md)
+- Homework: [Transit Availability Visualizer Add-Ons](homework.md)
 
 -----
 

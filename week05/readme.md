@@ -7,9 +7,7 @@
 
 -----
 
-### Inclusive Bus Stop Principles and Design
-
-##### Inclusive Transit Stop Design and Research Sprint
+### Inclusive Transit Stop Design and Research Sprint
 
 ![bus stop](https://pbs.twimg.com/media/DAmCRsMXcAACX7v.jpg)
 
@@ -34,11 +32,3 @@ Please skim through this example of a design guideline document: the [Toolkit fo
 3. Make a set of at least 5, but no more than 10, recommendations to improve the stations that we could pass by transit policymakers.
 
 4. Compile all of the above into a PDF for sharing next week.
-
------
-
-##### References for PWM Signalling
-
-Highly recommended readings for additional technical context and learnings:
-
-- Sparkfun's [*Pulse Width Modulation*](https://learn.sparkfun.com/tutorials/pulse-width-modulation/all)
