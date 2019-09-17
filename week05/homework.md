@@ -7,7 +7,7 @@
 
 -----
 
-### Homework for September 17
+### Homework for September 24
 
 ##### Readings (1 hour)
 
