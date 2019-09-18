@@ -15,7 +15,7 @@ We can at last bring together our Python learnings and our small electronics exp
 
 ##### Digital Control
 
-If we wanted to blink and LED on and off, we could run the following code. Look closely at the comments for more information. Not the `while True :` loop which continues running this code until you press `control + c` on your keyboards.
+If we wanted to blink and LED on and off, we could run the following code. Look closely at the comments for more information. Note the `while True :` loop which continues running this code until you press `control + c` on your keyboards.
 
 ```python
 # import modules
