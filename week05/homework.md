@@ -36,7 +36,18 @@ Grab a new API Key (so silly that the city has two different key servers!), skim
 
 Afterwards, integrate data from the the Bus Tracker API into your Transit Visualizer from last week, and swap out the three single color LEDs for your RGB LED. 
 
-Develop a *language of color* to communicate the *contextual health* of the transit area around your living place. For example, we might say that the *greener the LED*, the more we should consider northbound trains and the *bluer the led* the more we should jump on a bus.
+Get predictions for the nearest train station, bus station, and Divvy Dock. Then, develop a *language of color* to communicate the transit happenings contextual to your living place. Use this visualization logic as a starting point, and feel free to adjust the colors, directions, and conditions to fit your transit environment.
+
+- Red: A train towards the Loop is coming next
+- Blue:
+- Green: A train away from the Loop is coming next
+- Magenta (R+B): A bus towards the Loop is next
+- Yellow (G+R): A bus away from the Loop is next
+- Cyan (B+G): Trains and buses are all far away, take an available Divvy Bike
+- White (R+B+G): Trains, buses, and bikes are all a good option
+- Black (No Light): Trains, buses, and bikes are all not available
+
+Bonus: Could you 
 
 -----
 
