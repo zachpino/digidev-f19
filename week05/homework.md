@@ -36,18 +36,18 @@ Grab a new API Key (so silly that the city has two different key servers!), skim
 
 Afterwards, integrate data from the the Bus Tracker API into your Transit Visualizer from last week, and swap out the three single color LEDs for your RGB LED. 
 
-Get predictions for the nearest train station, bus station, and Divvy Dock. Then, develop a *language of color* to communicate the transit happenings contextual to your living place. Use this visualization logic as a starting point, and feel free to adjust the colors, directions, and conditions to fit your transit environment.
+Get predictions for the nearest train station, bus station, and Divvy dock. Then, develop a *language of color* to communicate the transit happenings contextual to your living place. Use this visualization logic as a starting point, and feel free to adjust the colors, directions, timings, and conditions to fit your transit environment. All of these colors can be created with standard [`GPIO.output()`](https://github.com/zachpino/digidev-f19/blob/master/week04/python-gpio.md) commands without the need for this week's [PWM](https://github.com/zachpino/digidev-f19/blob/master/week05/python-gpio.md) control. 
 
-- Red: A train towards the Loop is coming next
-- Blue:
-- Green: A train away from the Loop is coming next
-- Magenta (R+B): A bus towards the Loop is next
-- Yellow (G+R): A bus away from the Loop is next
-- Cyan (B+G): Trains and buses are all far away, take an available Divvy Bike
-- White (R+B+G): Trains, buses, and bikes are all a good option
-- Black (No Light): Trains, buses, and bikes are all not available
+- Red: A train towards the Loop is arriving next and within 5 minutes
+- Blue: Trains are arriving from both directions within 5 minutes
+- Green: A train away from the Loop is arriving next and within 5 minutes
+- Magenta (R+B): A bus towards the Loop is arriving next and within 5 minutes
+- Yellow (G+R): A bus away from the Loop is arriving next and within 5 minutes
+- Cyan (B+G): Trains and buses are all farther than 5 minutes away, but a Divvy Bike is a available
+- White (R+B+G): Trains and buses are arriving from all directions within 5 minutes, and bikes are available
+- Black (No Light): Trains and buses are far away, and a bike is not available
 
-Bonus: Could you 
+Bonus: Could you use PWM 
 
 -----
 
