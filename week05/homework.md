@@ -24,7 +24,7 @@ Please do not *read these papers*, but skim them and try to determine exactly wh
 
 ##### Finish Transit Stop Analysis Exercise (2-3 hours)
 
-Finish preparing your design guidelines and recommendations document for sharing next week. Drop these in our class shared Drive please before class next week.
+Finish preparing your design guidelines and recommendations document for sharing next week. Drop these in our class [shared Drive](https://drive.google.com/open?id=1dJrHjsFLR6C9UX2fLjb9_pllqiBjsUcO) please before class next week.
 
 -----
 
