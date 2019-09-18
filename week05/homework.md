@@ -47,7 +47,117 @@ Get predictions for the nearest train station, bus station, and Divvy dock. Then
 - White (R+B+G): Trains and buses are arriving from all directions within 5 minutes, and bikes are available
 - Black (No Light): Trains and buses are far away, and a bike is not available
 
-Bonus: Could you use PWM 
+Bonus: Could you use [PWM](https://github.com/zachpino/digidev-f19/blob/master/week05/python-gpio.md) signals so that the colors reflect the incoming timings of the various transit options? For example, could the red led get brighter and brighter as the train approaches? Take a look through the code below to see a model for this behavior.
+
+```python
+import requests
+import json
+from datetime import datetime
+import time
+#import RPi.GPIO as GPIO     
+
+#############################################
+
+#personal API key
+key = ""
+
+#you can get a list of route codes at...
+# http://www.ctabustracker.com/bustime/api/v2/getroutes?format=json&key=...
+route = 3
+
+#if you have a route, you can get the directions a bus travels
+#http://www.ctabustracker.com/bustime/api/v2/getdirections?format=json&rt=3&key=...
+direction = "Southbound"
+
+#if you have route and direction, you can get stops
+#http://www.ctabustracker.com/bustime/api/v2/getstops?format=json&rt=3&dir=Southbound&key=...
+stop = 1596
+
+#build API url
+url = "http://www.ctabustracker.com/bustime/api/v2/getpredictions?key=" + key + "&rt=" + str(route) + "&stpid=" + str(stop) + "&dir=" + direction + "&format=json"
+
+#############################################
+
+#store pin locations in variables
+#rPin = 26
+#gPin = 19
+#bPin = 13
+
+#use BCM numbering system
+#GPIO.setmode(GPIO.BCM)          
+
+#set all needed pins as output
+#GPIO.setup(rPin, GPIO.OUT)   
+#GPIO.setup(gPin, GPIO.OUT)   
+#GPIO.setup(bPin, GPIO.OUT)   
+
+#create a PWM object for each pin, with 100 as its pulse frequency in hertz
+#rPWM = GPIO.PWM(rPin, 100)    
+#gPWM = GPIO.PWM(gPin, 100)    
+#bPWM = GPIO.PWM(bPin, 100)    
+
+#startup the PWM signal at 0 duty load
+#rPWM.start(0)
+#gPWM.start(0)
+#bPWM.start(0)
+
+#############################################
+
+#loop forever
+while True : 
+
+	#ask API for data
+	response = requests.get(url)
+
+	#parse data as json
+	busData = response.json()
+	
+	#strip away some unnecessary data 
+	nextBus = busData["bustime-response"]["prd"][0]
+	
+	#the api gives a predicted arrival time. there is also a predictive countdown in "prdctdn", but that behaves strangely!
+	predictedArrivalTimeString = nextBus["prdtm"]
+
+	#record current moment
+	now = datetime.now()
+	
+	#create a time object so we can do time math
+	timeObject = datetime.strptime(predictedArrivalTimeString, "%Y%m%d %H:%M")
+
+	#determine how much time is left until train comes
+	timeDifference = timeObject - now
+
+	#number of seconds until predicted bus arrival
+	secondsTillArrival = timeDifference.seconds
+
+	#we will glow the green LED brighter as the bus approaches so long as it arriving within 5 minutes
+	#check if the bus is nearby
+	if secondsTillArrival < 300 :
+		#the bus is close! 
+
+		#let's check how close the bus is in our time window as a percentage
+		#the "300.0" is to force Python2 and Python3 to do floating point division
+		#1.0 is far away, 0.0 is arriving now
+		arrivalPercentage = secondsTillArrival / 300.0 
+
+		#we want the opposite though -- closer to 1.0 when the bus is approaching and 0.0 when it is far away
+		flippedPercentage = 1 - arrivalPercentage
+
+		#and, we want an integer between 0 and 100, not a floating decimal number between 0 and 1
+		pwmSignal = round(flippedPercentage*100)
+
+		#view the results
+		print("Bus arriving in " + str(secondsTillArrival) + " seconds")
+		print("LED receiving " + str(pwmSignal) + " brightness")
+		#make an empty new line
+		print("\n")
+
+		#turn this on to control your LED
+		#gPWM.ChangeDutyCycle(pwmSignal)
+
+	#delay a bit
+	time.sleep(2)
+```
 
 -----
 
