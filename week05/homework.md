@@ -31,10 +31,12 @@ Grab a new API Key (so silly that the city has two different key servers!), skim
 1. Given a bus stop, could you determine in code when the next buses might arrive, and where they are headed?
 2. Given a bus id number, could you follow it around the city and time its daily route?
 3. Given a general locational radius, could you find which bus routes pass through?
-4. Given specific geographic source and target areas, could you compare which bus a pedestrian should try to catch to get where they want to go?
+4. Given specific geographic source and target areas, could you compare which buses a pedestrian could try to catch to get where they want to go?
 5. Given a bus route number, could you collect latitude and longitude coordinates of its future and past stops to reconstruct its movement on a map?
 
-Afterwards, integrate data from the the Bus Tracker API into your Transit Visualizer from last week, and swap out the single color LEDs for your RGB LED. Develop a language of color to communicate the *contextual health* of the transit area around your living place. For example, we might say that the *greener the LED*, the more we should consider northbound trains and the *bluer the led* the more we should jump on a bus.
+Afterwards, integrate data from the the Bus Tracker API into your Transit Visualizer from last week, and swap out the three single color LEDs for your RGB LED. 
+
+Develop a *language of color* to communicate the *contextual health* of the transit area around your living place. For example, we might say that the *greener the LED*, the more we should consider northbound trains and the *bluer the led* the more we should jump on a bus.
 
 -----
 
