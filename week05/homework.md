@@ -22,6 +22,12 @@ Please do not *read these papers*, but skim them and try to determine exactly wh
 
 -----
 
+##### Finish Transit Stop Analysis Exercise (2-3 hours)
+
+Finish preparing your design guidelines and recommendations document for sharing next week. Drop these in our class shared Drive please before class next week.
+
+-----
+
 ##### Application: Figure out a few new APIs and add them to our Transit Health Visualizer (2-3 hours)
 
 Take a look at this [CTA Bus Tracker page](https://www.transitchicago.com/developers/bustracker/), and its [linked PDF documentation](https://www.transitchicago.com/assets/1/6/cta_Bus_Tracker_API_Developer_Guide_and_Documentation_20160929.pdf).  
@@ -159,8 +165,3 @@ while True :
 	time.sleep(2)
 ```
 
------
-
-##### Finish Transit Stop Exercise (2-3 hours)
-
-Finish preparing your design guidelines and recommendations document for sharing next week.
