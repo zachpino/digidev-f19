@@ -32,3 +32,8 @@ Documentation and Resources for the Fall 2019 Illinois Tech Institute of Design 
 	- Code: [Python PWM Control](week05/python-gpio.md)
 	- Homework Review: [Transit Availability Visualizer](week05/homework-answers.md)
 	- Homework: [Transit Availability Visualizer Add-Ons](week05/homework.md)
+
+- [Week 06 · Plotting](week05/readme.md) 	
+	- Presentation: [Everyone's Research on Station Accessibility](week06/readme.md)
+	- Code: [Python Data Plotting with MatPlotLib](week06/python-plotting.md)
+	- Homework: TBD
