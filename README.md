@@ -36,4 +36,5 @@ Documentation and Resources for the Fall 2019 Illinois Tech Institute of Design 
 - [Week 06 · Plotting](week05/readme.md) 	
 	- Presentation: [Everyone's Research on Station Accessibility](week06/readme.md)
 	- Code: [Python Data Plotting with MatPlotLib](week06/python-plotting.md)
-	- Homework: TBD
+	- Homework Review: [Transit Availability Visualizer with Add-Ons](week06/homework-answers.md)
+	- Homework: [Readings, Plotting](week06/homework.md)

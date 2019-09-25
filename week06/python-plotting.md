@@ -1,7 +1,8 @@
 ##### Week 06 Contents
 - Presentation: [Everyone's Research on Station Accessibility](readme.md)
 - Code: [Python Data Plotting with MatPlotLib](python-plotting.md)
-- Homework: TBD
+- Homework Review: [Transit Availability Visualizer with Add-Ons](homework-answers.md)
+- Homework: [Readings, Plotting](homework.md)
 
 -----
 
@@ -19,7 +20,6 @@ import json
 from datetime import datetime
 import time
 #import RPi.GPIO as GPIO     
-import numpy as np
 import matplotlib.pyplot as plt
 
 #############################################

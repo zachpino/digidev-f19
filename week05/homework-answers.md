@@ -35,7 +35,7 @@ import time
 
 
 #important API variables
-key = "fcbd890772d1472391248cddaf3b8a23"
+key = ""
 
 #CTA API variables
 NBstationCode = 30213
