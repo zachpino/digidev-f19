@@ -349,7 +349,7 @@ The homework last week also had some prompts about untangling if one could use t
 	#####################################################################################
 
 	#CTA Bus API Key
-	busKey = "WsNRBxSRFu9zC77ZQAESXtnBY"
+	busKey = ""
 
 	#Bus Route 3 is the King Drive Bus that travels up and down Michigan and MLK Drive. 3 does intersect
 	#As a counter example, bus Route 91 on Austin Ave does not intersect
@@ -427,7 +427,7 @@ The homework last week also had some prompts about untangling if one could use t
 	The below method generates line segments for the legs of a single route, and compares those with a geometric circle (the 'radius' in the question). If a leg (line segment) intersects the circle, we know that the bus passes through the circle of interest. But, this method will fail if the *entire route* exists *inside* of the circle of interest, which is pretty unlikely. Note that this method is *slow* — taking around 6 seconds to test a single route — and most GPS tools use a much simplified version of SymPy's mathematics -- which can lead to incorrect results ("rerouting...rerouting...rerouting..."). So, to test all 129 CTA routes, in both directions, this method would take around 25 minutes! Google Maps and similar tools are mind-bogglingly complex things that can only deliver their unbelievably quick, transactional experiences through a repertoire of geometric shortcuts, trigonometric simplifications, and mathematical heuristics.
 
 	```python
-		#####################################################################################
+	#####################################################################################
 	# Necessary Python Modules
 	#####################################################################################
 
@@ -442,7 +442,7 @@ The homework last week also had some prompts about untangling if one could use t
 	#####################################################################################
 
 	#CTA Bus API Key
-	busKey = "WsNRBxSRFu9zC77ZQAESXtnBY"
+	busKey = ""
 
 	#Bus Route 3 is the King Drive Bus that travels up and down Michigan and MLK Drive. 3 does intersect
 	#As a counter example, bus Route 91 on Austin Ave does not intersect
