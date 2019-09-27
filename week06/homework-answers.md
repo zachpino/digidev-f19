@@ -328,86 +328,93 @@ The homework last week also had some prompts about untangling if one could use t
 
 	There are at least two ways to answer this, depending on how much [*well, ackshually*](https://knowyourmeme.com/memes/ackchyually) one wants to be. 
 
-	A straightforward and easy-to-code interpretation understands the question as *is there a bus stop for a given line within a radius of a target location?*
+	**Approach A**: A straightforward and easy-to-code interpretation understands the question as *is there a bus stop for a given line within a radius of a target location?*
 
 	Using a [derivative of the Pythagorean theorem](https://www.purplemath.com/modules/distform.htm), we can calculate the distance from the source location to all of the bus stops, and compare that to our measuring radius. If the distance is smaller than the radius, then the bus stop — and therefore the route — is within range. Easy!
 
-```python
-#####################################################################################
-# Necessary Python Modules
-#####################################################################################
+	We could also implement a [Manhattan Distance](https://en.wikipedia.org/wiki/Taxicab_geometry) version of the distance equation, as detailed in the comments.
 
-import requests
-import json
-import time  
-from datetime import datetime
+	```python
+	#####################################################################################
+	# Necessary Python Modules
+	#####################################################################################
 
-#####################################################################################
-# CTA Bus Tracker API
-#####################################################################################
+	import requests
+	import json
+	import time  
+	from datetime import datetime
 
-#CTA Bus API Key
-busKey = "WsNRBxSRFu9zC77ZQAESXtnBY"
+	#####################################################################################
+	# CTA Bus Tracker API
+	#####################################################################################
 
-#Bus Route 3 is the King Drive Bus that travels up and down Michigan and MLK Drive. 3 does intersect
-#As a counter example, bus Route 91 on Austin Ave does not intersect
+	#CTA Bus API Key
+	busKey = "WsNRBxSRFu9zC77ZQAESXtnBY"
 
-busRoute = 3
-busDirection = "Southbound"
+	#Bus Route 3 is the King Drive Bus that travels up and down Michigan and MLK Drive. 3 does intersect
+	#As a counter example, bus Route 91 on Austin Ave does not intersect
 
-#construct API URLs for inbound and outbound CTA buses
-busUrl = "http://www.ctabustracker.com/bustime/api/v2/getstops?key=" + busKey + "&rt=" + str(busRoute) + "&dir=" + busDirection + "&format=json"
+	busRoute = 3
+	busDirection = "Southbound"
 
-#####################################################################################
-# Geography
-#####################################################################################
+	#construct API URLs for inbound and outbound CTA buses
+	busUrl = "http://www.ctabustracker.com/bustime/api/v2/getstops?key=" + busKey + "&rt=" + str(busRoute) + "&dir=" + busDirection + "&format=json"
 
-# radius of interest in miles
-radius = 1.5
+	#####################################################################################
+	# Geography
+	#####################################################################################
 
-# 1 degree of Latitude is ~69 miles
-radiusDegrees = 1.5/69
+	# radius of interest in miles
+	radius = 1.5
 
-# place of interest
-homeLon = -87.62233
-homeLat = 41.85836
+	# 1 degree of Latitude is ~69 miles
+	radiusDegrees = 1.5/69
 
-#####################################################################################
-# Main Code Loop
-#####################################################################################
+	# place of interest
+	homeLon = -87.62233
+	homeLat = 41.85836
 
-#ask CTA Bus Tracker API for data
-busResponse = requests.get(busUrl)
+	#####################################################################################
+	# Main Code Loop
+	#####################################################################################
 
-#parse and get meaningful data
-busStops = busResponse.json()["bustime-response"]["stops"] 
+	#ask CTA Bus Tracker API for data
+	busResponse = requests.get(busUrl)
 
-#keep track of if the route passes through the circle
-intersection = False
+	#parse and get meaningful data
+	busStops = busResponse.json()["bustime-response"]["stops"] 
 
-#loop through the bus stops, and calculate the distance in degrees longitude between the home point and the stop
-#the distance equation, derived from a^2 + b^2 = c^2, is sqrt((x2 - x1)^2 + (y2 - y1)^2)
+	#keep track of if the route passes through the circle
+	intersection = False
 
-for i in range(len(busStops)) :
-	distance = ( ((busStops[i]["lon"] - homeLon)**2) + ((busStops[i]["lat"] - homeLat)**2) )**.5
+	#loop through the bus stops, and calculate the distance in degrees longitude between the home point and the stop
+	#the distance equation, derived from a^2 + b^2 = c^2, is sqrt((x2 - x1)^2 + (y2 - y1)^2)
+	#this formula above calculates *as the bird flies* distance, which is not how we understand distances in cities where we often cannot move diagonally
+	#so we could instead use the manhattan distance equation if we wanted to which is ( |x1 - x2| + |y1 - y2| )
 
-	#check if we're close enough...
-	if distance < radiusDegrees:
-		intersection = True
-		#stop looping if we've found a bus stop in the radius of interest
-		break
+	for i in range(len(busStops)) :
+		#as the bird flies
+		distance = ( ((busStops[i]["lon"] - homeLon)**2) + ((busStops[i]["lat"] - homeLat)**2) )**.5
+
+		#manhattan distance
+		#distance = abs(busStops[i]["lon"] - homeLon) + abs(busStops[i]["lat"] - homeLat)
+		
+		#check if we're close enough...
+		if distance < radiusDegrees:
+			intersection = True
+			#stop looping if we've found a bus stop in the radius of interest
+			break
 
 
-#bus stop is in the region! 
-if intersection == True : 
-	print("bus route " + str(busRoute) + " passes through!")
-	
-#so sad...
-if intersection == False : 
-	print("bus route " + str(busRoute) + " does not pass through!")
+	#bus stop is in the region! 
+	if intersection == True : 
+		print("bus route " + str(busRoute) + " passes through!")
+		
+	#so sad...
+	if intersection == False : 
+		print("bus route " + str(busRoute) + " does not pass through!")
 
-```
------
+	```
 
 	An alternative interpretation assumes that the question is asking *does the bus pass through the radius at all?* as it traverses its route legs from stop to stop. This one is much tougher, and effectively impossible to guarantee due to [daily route variability](https://www.transitchicago.com/travel-information/bus-status/) and [geometric logic](https://en.wikipedia.org/wiki/Coastline_paradox). We would need to reconstruct *all* bus routes in *all their directions* as a series of line segments, select an acceptable level [geometric tolerance dilution](https://en.wikipedia.org/wiki/Dilution_of_precision_(navigation)), and [check if any of those segments intersects a circle](http://doswa.com/2009/07/13/circle-segment-intersectioncollision.html) defined by the center point of interest and the question's radius.
 
@@ -419,91 +426,91 @@ if intersection == False :
 
 	The below method generates line segments for the legs of a single route, and compares those with a geometric circle (the 'radius' in the question). If a leg (line segment) intersects the circle, we know that the bus passes through the circle of interest. But, this method will fail if the *entire route* exists *inside* of the circle of interest, which is pretty unlikely. Note that this method is *slow* — taking around 6 seconds to test a single route — and most GPS tools use a much simplified version of SymPy's mathematics -- which can lead to incorrect results ("rerouting...rerouting...rerouting..."). So, to test all 129 CTA routes, in both directions, this method would take around 25 minutes! Google Maps and similar tools are mind-bogglingly complex things that can only deliver their unbelievably quick, transactional experiences through a repertoire of geometric shortcuts, trigonometric simplifications, and mathematical heuristics.
 
-```python
+	```python
+		#####################################################################################
+	# Necessary Python Modules
 	#####################################################################################
-# Necessary Python Modules
-#####################################################################################
 
-import requests
-import json
-import time  
-from datetime import datetime
-import sympy as sp
+	import requests
+	import json
+	import time  
+	from datetime import datetime
+	import sympy as sp
 
-#####################################################################################
-# CTA Bus Tracker API
-#####################################################################################
+	#####################################################################################
+	# CTA Bus Tracker API
+	#####################################################################################
 
-#CTA Bus API Key
-busKey = "WsNRBxSRFu9zC77ZQAESXtnBY"
+	#CTA Bus API Key
+	busKey = "WsNRBxSRFu9zC77ZQAESXtnBY"
 
-#Bus Route 3 is the King Drive Bus that travels up and down Michigan and MLK Drive. 3 does intersect
-#As a counter example, bus Route 91 on Austin Ave does not intersect
+	#Bus Route 3 is the King Drive Bus that travels up and down Michigan and MLK Drive. 3 does intersect
+	#As a counter example, bus Route 91 on Austin Ave does not intersect
 
-busRoute = 3
-busDirection = "Southbound"
+	busRoute = 3
+	busDirection = "Southbound"
 
-#construct API URLs for inbound and outbound CTA buses
-busUrl = "http://www.ctabustracker.com/bustime/api/v2/getstops?key=" + busKey + "&rt=" + str(busRoute) + "&dir=" + busDirection + "&format=json"
+	#construct API URLs for inbound and outbound CTA buses
+	busUrl = "http://www.ctabustracker.com/bustime/api/v2/getstops?key=" + busKey + "&rt=" + str(busRoute) + "&dir=" + busDirection + "&format=json"
 
-#####################################################################################
-# Geography
-#####################################################################################
+	#####################################################################################
+	# Geography
+	#####################################################################################
 
-# radius of interest in miles
-radius = 1.5
+	# radius of interest in miles
+	radius = 1.5
 
-# 1 degree of Latitude is ~69 miles
-radiusDegrees = 1.5/69
+	# 1 degree of Latitude is ~69 miles
+	radiusDegrees = 1.5/69
 
-# place of interest
-homeCoordinate = (-87.62233, 41.85836)
+	# place of interest
+	homeCoordinate = (-87.62233, 41.85836)
 
-# convert to SymPy Circle object
-homeCircle = sp.Circle(homeCoordinate, sp.sympify(str(radiusDegrees), rational=True))
+	# convert to SymPy Circle object
+	homeCircle = sp.Circle(homeCoordinate, sp.sympify(str(radiusDegrees), rational=True))
 
-#####################################################################################
-# Main Code Loop
-#####################################################################################
+	#####################################################################################
+	# Main Code Loop
+	#####################################################################################
 
-#ask CTA Bus Tracker API for data
-busResponse = requests.get(busUrl)
+	#ask CTA Bus Tracker API for data
+	busResponse = requests.get(busUrl)
 
-#parse and get meaningful data
-busStops = busResponse.json()["bustime-response"]["stops"] 
+	#parse and get meaningful data
+	busStops = busResponse.json()["bustime-response"]["stops"] 
 
-#list to hold each leg of the route 
-routeLegs = []
+	#list to hold each leg of the route 
+	routeLegs = []
 
-#loop through the list of stops, and construct a line segment for each leg defined by a start and end point
-#so, we use index i as start point and index i+i as end point
-#we have to make sure we end our loop one position before the end of the list
-for i in range(len(busStops) - 1) :
-	start = ( busStops[i]["lon"] , busStops[i]["lat"] )
-	end = ( busStops[i+1]["lon"] , busStops[i+1]["lat"] )
-	#make a SymPy segment object
-	routeLegs.append(sp.Segment2D(sp.Point2D(start), sp.Point2D(end)))
+	#loop through the list of stops, and construct a line segment for each leg defined by a start and end point
+	#so, we use index i as start point and index i+i as end point
+	#we have to make sure we end our loop one position before the end of the list
+	for i in range(len(busStops) - 1) :
+		start = ( busStops[i]["lon"] , busStops[i]["lat"] )
+		end = ( busStops[i+1]["lon"] , busStops[i+1]["lat"] )
+		#make a SymPy segment object
+		routeLegs.append(sp.Segment2D(sp.Point2D(start), sp.Point2D(end)))
 
-#keep track of if the route passes through the circle
-success = False
+	#keep track of if the route passes through the circle
+	success = False
 
-#loop through the newly created legs, and see if there is an intersection with radius of interest
-for i in range(len(routeLegs)) :
-	intersections = sp.intersection(homeCircle, routeLegs[i])
+	#loop through the newly created legs, and see if there is an intersection with radius of interest
+	for i in range(len(routeLegs)) :
+		intersections = sp.intersection(homeCircle, routeLegs[i])
 
-	#SymPy would return a list of points of intersection were there to be an intersection, so we know that this is a successful test based on list length
-	if len(intersections) > 0 : 
-		#feedback
-		print("bus route " + str(busRoute) + " passes through!")
-		success = True
-		#stop the loop early
-		break
+		#SymPy would return a list of points of intersection were there to be an intersection, so we know that this is a successful test based on list length
+		if len(intersections) > 0 : 
+			#feedback
+			print("bus route " + str(busRoute) + " passes through!")
+			success = True
+			#stop the loop early
+			break
 
-#so sad...
-if success == False : 
-	print("bus route " + str(busRoute) + " does not pass through!")
+	#so sad...
+	if success == False : 
+		print("bus route " + str(busRoute) + " does not pass through!")
 
-```
+	```
 
 -----
 
