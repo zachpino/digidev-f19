@@ -326,7 +326,90 @@ The homework last week also had some prompts about untangling if one could use t
 
 3. Given a general locational radius, could you find which bus routes pass through?
 
-	This one is much tougher, and effectively impossble to guarantee due to daily route variability. We would need to reconstruct *all* bus routes in *all their directions* as a series of line segments, and [check if any of those segments intersects a circle](http://doswa.com/2009/07/13/circle-segment-intersectioncollision.html) defined by the center point of interest.
+	There are at least two ways to answer this, depending on how much [*well, ackshually*](https://knowyourmeme.com/memes/ackchyually) one wants to be. 
+
+	A straightforward and easy-to-code interpretation understands the question as *is there a bus stop for a given line within a radius of a target location?*
+
+	Using a [derivative of the Pythagorean theorem](https://www.purplemath.com/modules/distform.htm), we can calculate the distance from the source location to all of the bus stops, and compare that to our measuring radius. If the distance is smaller than the radius, then the bus stop — and therefore the route — is within range. Easy!
+
+```python
+#####################################################################################
+# Necessary Python Modules
+#####################################################################################
+
+import requests
+import json
+import time  
+from datetime import datetime
+
+#####################################################################################
+# CTA Bus Tracker API
+#####################################################################################
+
+#CTA Bus API Key
+busKey = "WsNRBxSRFu9zC77ZQAESXtnBY"
+
+#Bus Route 3 is the King Drive Bus that travels up and down Michigan and MLK Drive. 3 does intersect
+#As a counter example, bus Route 91 on Austin Ave does not intersect
+
+busRoute = 3
+busDirection = "Southbound"
+
+#construct API URLs for inbound and outbound CTA buses
+busUrl = "http://www.ctabustracker.com/bustime/api/v2/getstops?key=" + busKey + "&rt=" + str(busRoute) + "&dir=" + busDirection + "&format=json"
+
+#####################################################################################
+# Geography
+#####################################################################################
+
+# radius of interest in miles
+radius = 1.5
+
+# 1 degree of Latitude is ~69 miles
+radiusDegrees = 1.5/69
+
+# place of interest
+homeLon = -87.62233
+homeLat = 41.85836
+
+#####################################################################################
+# Main Code Loop
+#####################################################################################
+
+#ask CTA Bus Tracker API for data
+busResponse = requests.get(busUrl)
+
+#parse and get meaningful data
+busStops = busResponse.json()["bustime-response"]["stops"] 
+
+#keep track of if the route passes through the circle
+intersection = False
+
+#loop through the bus stops, and calculate the distance in degrees longitude between the home point and the stop
+#the distance equation, derived from a^2 + b^2 = c^2, is sqrt((x2 - x1)^2 + (y2 - y1)^2)
+
+for i in range(len(busStops)) :
+	distance = ( ((busStops[i]["lon"] - homeLon)**2) + ((busStops[i]["lat"] - homeLat)**2) )**.5
+
+	#check if we're close enough...
+	if distance < radiusDegrees:
+		intersection = True
+		#stop looping if we've found a bus stop in the radius of interest
+		break
+
+
+#bus stop is in the region! 
+if intersection == True : 
+	print("bus route " + str(busRoute) + " passes through!")
+	
+#so sad...
+if intersection == False : 
+	print("bus route " + str(busRoute) + " does not pass through!")
+
+```
+-----
+
+	An alternative interpretation assumes that the question is asking *does the bus pass through the radius at all?* as it traverses its route legs from stop to stop. This one is much tougher, and effectively impossible to guarantee due to [daily route variability](https://www.transitchicago.com/travel-information/bus-status/) and [geometric logic](https://en.wikipedia.org/wiki/Coastline_paradox). We would need to reconstruct *all* bus routes in *all their directions* as a series of line segments, select an acceptable level [geometric tolerance dilution](https://en.wikipedia.org/wiki/Dilution_of_precision_(navigation)), and [check if any of those segments intersects a circle](http://doswa.com/2009/07/13/circle-segment-intersectioncollision.html) defined by the center point of interest and the question's radius.
 
 	To facilitate the math, it is easier to make use of the awesome [`sympy` module](https://www.sympy.org/en/index.html) for symbolic geometry and arithmetic. In terminal...
 
@@ -334,7 +417,7 @@ The homework last week also had some prompts about untangling if one could use t
 	pip install sympy
 	```
 
-	The below method generates line segments for the legs of a single route, and compares those with a geometric circle (the 'radius' in the question). If a leg line segment intersects the circle, we know that the bus passes through the circle of interest. But, this method will fail if the *entire route* exists *inside* of the circle of interest, which is pretty unlikely. Note that this method is *slow* — taking around 6 seconds to test a single route — and most GPS tools use a much simplified version of SymPy's mathematics -- which can lead to incorrect results ("rerouting...rerouting...rerouting..."). So, to test all 129 CTA routes, in both directions, this method would take around 25 minutes! Google Maps and similar tools are mind-bogglingly complex things that can only deliver the transactional experiences that we have with them through an unbelievable repertoire of geometric shortcuts, trigonometric simplifications, and mathematical heuristics.
+	The below method generates line segments for the legs of a single route, and compares those with a geometric circle (the 'radius' in the question). If a leg (line segment) intersects the circle, we know that the bus passes through the circle of interest. But, this method will fail if the *entire route* exists *inside* of the circle of interest, which is pretty unlikely. Note that this method is *slow* — taking around 6 seconds to test a single route — and most GPS tools use a much simplified version of SymPy's mathematics -- which can lead to incorrect results ("rerouting...rerouting...rerouting..."). So, to test all 129 CTA routes, in both directions, this method would take around 25 minutes! Google Maps and similar tools are mind-bogglingly complex things that can only deliver their unbelievably quick, transactional experiences through a repertoire of geometric shortcuts, trigonometric simplifications, and mathematical heuristics.
 
 ```python
 	#####################################################################################
