@@ -8,13 +8,11 @@
 
 ### Plotting Census Data in Python on Shapefiles as Choropleth
 
-![]()
-
 ##### Download Geographic Data
 
 To plot data from the census, we need matching geographic data. Data in the census is indexed to geographic entities according to this schema:
 
-![census hierarchies](https://factfinder.census.gov/help/img/geo_hierarchy.png)
+![census hierarchies](https://s3.amazonaws.com/gl-shared-pictures/hierarchy_census_geographic_entities.png)
 
 For today, we'll be working at the tract level. Download this [shapefile](https://www.chicago.gov/city/en/depts/doit/dataset/boundaries_-_censustracts.html) and ensure that it sits next to your Python code in your file system. 
 
