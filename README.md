@@ -38,3 +38,10 @@ Documentation and Resources for the Fall 2019 Illinois Tech Institute of Design 
 	- Code: [Python Data Plotting with MatPlotLib](week06/python-plotting.md)
 	- Homework Review: [Transit Availability Visualizer with Add-Ons](week06/homework-answers.md)
 	- Homework: [Readings, Plotting](week06/homework.md)
+
+- [Week 07 · Plotting](week05/readme.md) 	
+
+	- Presentation: [Census](week07/readme.md)
+	- Code: [Working with the Census API](week07/census-api.md)
+	- Code: [Python Census Data Plotting](week07/census-plotting.md)
+	- Homework: TBD
