@@ -2,7 +2,6 @@
 - Presentation: [Census](readme.md)
 - Code: [Working with the Census API](census-api.md)
 - Code: [Python Census Data Plotting](census-plotting.md)
-- Homework: TBD
 
 -----
 

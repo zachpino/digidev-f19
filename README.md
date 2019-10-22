@@ -33,14 +33,21 @@ Documentation and Resources for the Fall 2019 Illinois Tech Institute of Design 
 	- Homework Review: [Transit Availability Visualizer](week05/homework-answers.md)
 	- Homework: [Transit Availability Visualizer Add-Ons](week05/homework.md)
 
-- [Week 06 · Plotting](week05/readme.md) 	
+- [Week 06 · Plotting](week06/readme.md) 	
 	- Presentation: [Everyone's Research on Station Accessibility](week06/readme.md)
 	- Code: [Python Data Plotting with MatPlotLib](week06/python-plotting.md)
 	- Homework Review: [Transit Availability Visualizer with Add-Ons](week06/homework-answers.md)
 	- Homework: [Readings, Plotting](week06/homework.md)
 
-- [Week 07 · Plotting Census Data](week05/readme.md) 	
+- [Week 07 · Plotting Census Data](week07/readme.md) 	
 	- Presentation: [Census](week07/readme.md)
 	- Code: [Working with the Census API](week07/census-api.md)
 	- Code: [Python Census Data Plotting](week07/census-plotting.md)
-	- Homework: TBD
+
+- Week 08 · :sunrise_over_mountains:
+
+- [Week 09 · Return to Hardware](week09/readme.md) 	
+	- Presentation: [Soldering and Related Skills](week09/readme.md)
+	- Components: [RGB LED Strips (Neopixels)](week09/circuits.md)
+	- Homework: [Practice Soldering and RGB Strip Visualization](week09/homework.md)
+
