@@ -7,6 +7,8 @@
 
 ### Updating and Installing Some Stuff
 
+## WAIT ON THIS ##
+
 One line at a time, on the Raspberry Pi, via ssh, confirming as needed with 'y'...
 
 ```
