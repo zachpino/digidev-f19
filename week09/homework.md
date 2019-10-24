@@ -23,6 +23,8 @@ This chapter narrates the increasing importance of *Universal Design* as a movem
 
 ##### Coding (2 hours)
 
+## WAIT ON THIS 
+
 Connect your Raspberry Pi LED strip to one of the several APIs we have discussed in class so far (census, bus tracker, train tracker, divvy status). Create a visualization using the LED strip that demonstrates, for example, a series of stops on a certain bus line or a set of train and divvy stations near your home. The overall logic is up to you -- but try to make it useful and legible.
 
 
