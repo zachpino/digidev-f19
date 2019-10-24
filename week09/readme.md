@@ -7,21 +7,6 @@
 
 ### Updating and Installing Some Stuff
 
-## WAIT ON THIS ##
-
-One line at a time, on the Raspberry Pi, via ssh, confirming as needed with 'y'...
-
-```
-sudo apt-get update
-sudo apt-get upgrade
-sudo pip3 install --upgrade setuptools
-sudo apt-get install python3-pip
-pip3 install adafruit-blinka
-sudo pip3 install rpi_ws281x adafruit-circuitpython-neopixel
-```
-
------
-
 ### Enable i2c and SPI
 
 Let's make sure some common access protocols are enabled. On the Raspberry Pi, via ssh, type...
