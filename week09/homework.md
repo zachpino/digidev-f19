@@ -1,7 +1,7 @@
 ##### Week 09 Contents
-- Presentation: [Soldering and Related Skills](readme.md)
+- Presentation: [Updating, Installing, Soldering and Related Skills](readme.md)
 - Components: [RGB LED Strips (Neopixels)](circuits.md)
-- Homework: [Practice Soldering and RGB Strip Visualization](homework.md)
+- Homework: [Practice Soldering](homework.md)
 
 -----
 
@@ -19,14 +19,7 @@ This chapter narrates the increasing importance of *Universal Design* as a movem
 
 - Make some jewelry and fashion to practice soldering! Take some wires and create some bracelets and anklets, necklaces, braided wire art, pins, garment add-ons, anything you like. Bonus points if you solder in some batteries and LEDs (don't forget resistors)! 
 
------
-
-##### Coding (2 hours)
-
-## WAIT ON THIS 
-
-Connect your Raspberry Pi LED strip to one of the several APIs we have discussed in class so far (census, bus tracker, train tracker, divvy status). Create a visualization using the LED strip that demonstrates, for example, a series of stops on a certain bus line or a set of train and divvy stations near your home. The overall logic is up to you -- but try to make it useful and legible.
-
+- Ensure you have soldered 3 wires onto your LED strip for connecting it to a breadboard.
 
 
 

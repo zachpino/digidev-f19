@@ -47,7 +47,7 @@ Documentation and Resources for the Fall 2019 Illinois Tech Institute of Design 
 - Week 08 · :sunrise_over_mountains:
 
 - [Week 09 · Return to Hardware](week09/readme.md) 	
-	- Presentation: [Soldering and Related Skills](week09/readme.md)
+	- Presentation: [Updating, Installing, Soldering and Related Skills](week09/readme.md)
 	- Components: [RGB LED Strips (Neopixels)](week09/circuits.md)
-	- Homework: [Practice Soldering and RGB Strip Visualization](week09/homework.md)
+	- Homework: [Practice Soldering](week09/homework.md)
 
