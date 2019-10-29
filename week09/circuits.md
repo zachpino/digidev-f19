@@ -33,6 +33,8 @@ Never buy the over-priced [Philips Hue light strips](https://www.amazon.com/Phil
 
 ### Adafruit's Sample Code for NeoPixels
 
+## WAIT ON THIS
+
 ```python
 # Simple test for NeoPixels on Raspberry Pi
 import time
