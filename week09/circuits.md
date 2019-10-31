@@ -1,7 +1,6 @@
 ##### Week 09 Contents
 - Presentation: [Updating, Installing, Soldering and Related Skills](readme.md)
 - Components: [RGB LED Strips (Neopixels)](circuits.md)
-- Homework: [Practice Soldering](homework.md)
 
 -----
 

@@ -2,8 +2,8 @@
 - Presentation: [Algorithmic Graphics and Form](readme.md)
 - Code: [Coding an Image](image.md)
 - Code: [MatPlotLib 3D](matplotlib3d.md)
-- Code: [Turtle Graphics](turtle.md)
 - Code: [Heightfields](heightfield.md)
+- Homework: [LED Strips, Image Manipulation, and Heightfields](homework.md)
 
 -----
 
@@ -53,6 +53,7 @@ img.save('colors.jpg')
 
 ![sprinkles!](random.jpg)
 
+----
 
 ### Programmatically Playing with Color Spectra
 
@@ -95,7 +96,7 @@ img.save('colors.jpg')
 
 ![spectrum!](hues-square.jpg)
 
-This program works fine, but isn't very flexible since we have linked our color spectrum with the size of the image. Try to make `width` or `height` larger than 255, and you will receive an error; and values smaller than 255 will not show the whole spectrum. Here is a more extensible version that decouples the two concepts...
+This program works fine, but isn't very flexible since we have linked our color spectrum with the size of the image. Try to make `width` or `height` larger than 255, and you will receive an error; and values smaller than 255 will not show the whole spectrum. Here is a more extensible version that decouples the two concepts by [parameterizing](https://en.wikipedia.org/wiki/Parametrization_(geometry)) the positional values of the image.
 
 ```python
 from PIL import Image
@@ -140,6 +141,7 @@ img.save('colors.jpg')
 
 :metal:
 
+-----
 
 ### Using the HSV Color Model with Pillow
 
@@ -234,11 +236,13 @@ img.convert('RGB').save('colors.jpg')
 
 ![segment](segment.jpg)
 
+-----
+
 ### Reading in Raster Data
 
 Pillow has all kinds of [cool abilities](https://pillow.readthedocs.io/en/3.1.x/reference/Image.html) to edit existing images like merging and blending, rotating and cropping, and manipulating and enhancing colors. And, even more usefully, it can expose the color values of individual pixels for programmatic editing.
 
-Here is a very naive implementation of a [contrast edge detector](), the fundamental algorithm essential to nearly all [computer vision systems]().
+Here is a very naive implementation of a [contrast edge detector](https://en.wikipedia.org/wiki/Edge_detection), the fundamental algorithm essential to nearly all [computer vision systems](https://en.wikipedia.org/wiki/Computer_vision) including [autonomous vehicle routing](https://pdfs.semanticscholar.org/dd13/fd21f727dde2a8fc9e7e04b92ab401fbfa24.pdf).
 
 ```python
 from PIL import Image

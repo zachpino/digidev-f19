@@ -2,8 +2,8 @@
 - Presentation: [Algorithmic Graphics and Form](readme.md)
 - Code: [Coding an Image](image.md)
 - Code: [MatPlotLib 3D](matplotlib3d.md)
-- Code: [Turtle Graphics](turtle.md)
 - Code: [Heightfields](heightfield.md)
+- Homework: [LED Strips, Image Manipulation, and Heightfields](homework.md)
 
 -----
 

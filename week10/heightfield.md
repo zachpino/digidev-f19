@@ -2,8 +2,8 @@
 - Presentation: [Algorithmic Graphics and Form](readme.md)
 - Code: [Coding an Image](image.md)
 - Code: [MatPlotLib 3D](matplotlib3d.md)
-- Code: [Turtle Graphics](turtle.md)
 - Code: [Heightfields](heightfield.md)
+- Homework: [LED Strips, Image Manipulation, and Heightfields](homework.md)
 
 -----
 
@@ -11,7 +11,15 @@
 
 We can combine everything that came before this week into a [heightfield/heightmap](https://en.wikipedia.org/wiki/Heightmap), an image-based method of compressing 3D information. In a heightfield image, grayscale values are used to represent elevation. Black is often sea level, and white is mountain peaks. This technique is used in every video game and Pixar movie ever made, and makes storage of large 3D terrains possible. For example, this small heightfield represents terrain data for Mount Kilimanjaro, sourced from [infrared mapping satellites](https://en.wikipedia.org/wiki/Shuttle_Radar_Topography_Mission) participating in global [Digital Elevation Modeling](https://en.wikipedia.org/wiki/Digital_elevation_model) projects. 
 
-This [awesome website](http://terrain.party) makes it easy to grab topographic heightfields.
+This [awesome website](http://terrain.party) makes it easy to grab topographic heightfields. But, the (seemingly broken?) interface makes grabbing your preferred areas difficult. So, think like a programmer! We can hack the URLs to grab what we need...
+
+```
+http://terrain.party/api/export?name=maybekentucky&box=-86.657427,35.764666,-86.856702,35.602969
+```
+
+The `name` key is meaningless, but you can set it to whatever you like (just no special characters or spaces). The `box` key is more interesting, and takes four values in order: the eastern bounding line of longitude, the southern bounding line of latitude, the western bounding line of longitude, and finally the northern bounding line of latitude. This is the order that computers tend to understand [circular logic](https://en.wikipedia.org/wiki/Unit_circle) (clockwise, starting from the east).
+
+## Beware that large images will likely crash matplotlib! Best to resize your heightfield images before projecting them into 3D to no more than 250px on their longest side.
 
 ![kilimanjaro](kili_crop.jpg)
 

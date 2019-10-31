@@ -49,7 +49,6 @@ Documentation and Resources for the Fall 2019 Illinois Tech Institute of Design 
 - [Week 09 · Return to Hardware](week09/readme.md) 	
 	- Presentation: [Updating, Installing, Soldering and Related Skills](week09/readme.md)
 	- Components: [RGB LED Strips (Neopixels)](week09/circuits.md)
-	- Homework: [Practice Soldering](week09/homework.md)
 
 - [Week 10 · Algorithmic Drawing](week10/readme.md) 	
 	- Presentation: [Algorithmic Graphics and Form](readme.md)
@@ -57,5 +56,6 @@ Documentation and Resources for the Fall 2019 Illinois Tech Institute of Design 
 	- Code: [MatPlotLib 3D](week10/matplotlib3d.md)
 	- Code: [Turtle Graphics](week10/turtle.md)
 	- Code: [Heightfields](week10/heightfield.md)
+	- Homework: [LED Strips, Image Manipulation, and Heightfields](week10/homework.md)
 
 
