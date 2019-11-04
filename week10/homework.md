@@ -33,7 +33,7 @@ Three tasks based heavily on the code from this week....
 
 2. Create a script that removes all *red color* from an image and replaces it with *green*. Could you extend this to be more flexible, partially recreating [Photoshop's Selective Color Adjustment](https://photographypla.net/introduction-selective-color-adjustment/)? Hint: consider using the HSV color space rather than RGB!
 
-3. Create a [heightfield of your own](heightfield.md) based on an image, or on a part of the world downloaded from terrain.party?
+3. Create a [heightfield of your own](heightfield.md) based on an image, or on a part of the world downloaded from [terrain.party](http://terrain.party)? 
 
 Bonus: Could you write a script that takes two images of equal pixel dimensions, and combines the two together into a new image with alternating pixels? The first pixel comes from image A, the second pixel comes from image B, the third pixel comes from image A... This is a form of spycraft encryption called [steganography](https://en.wikipedia.org/wiki/Steganography). Could your script be easily editable to allow more images? Or easily exhibit different pixel patterns like AAABAAABAAAB? 
 
