@@ -6,11 +6,9 @@
 
 1. First, create a script that converts a color image to a grayscale image. Could you then write a script that does the reverse, and creates red/green/blue color versions from grayscale images like [Photoshop's Hue/Saturation Colorize Adjustment](https://helpx.adobe.com/photoshop-elements/using/adjusting-color-saturation-hue-vibrance.html#adjust_saturation_and_hue)? Hint for both: consider borrowing the `computeBrightness` function from the [edge detection](image.md) example. 
 
-	To grayscale:
-	![olde timey cute!](grayscale.jpg) 
+![olde timey cute!](grayscale.jpg) 
 
-	From grayscale to green (see commented lines in the `for` loop):
-	![alien cute!](greenscale.jpg) 
+![alien cute!](greenscale.jpg) 
 
 ```python
 from PIL import Image
@@ -62,8 +60,7 @@ img.save('grayscale.jpg')
 
 2. Create a script that removes all *red color* from an image and replaces it with *green*. 
 
-	Reds to Greens:
-	![underwater cute!](redToGreen.jpg) 
+![underwater cute!](redToGreen.jpg) 
 
 ```python
 from PIL import Image
@@ -172,13 +169,13 @@ img.convert('RGB').save('hueSpin.jpg')
 
 3. Create a [heightfield of your own](heightfield.md) based on an image, or on a part of the world downloaded from [terrain.party](http://terrain.party)? 
 	
-	Usable code [here](../week10/heightfield.md).
+Usable code [here](../week10/heightfield.md).
 
 -----
 
 4. Could you write a script that takes two images of equal pixel dimensions, and combines the two together into a new image with alternating pixels? 
 
-	![unholy abomination](merged.jpg)
+![unholy abomination](merged.jpg)
 
 ```python
 from PIL import Image
