@@ -8,7 +8,7 @@
 
 ![olde timey cute!](grayscale.jpg) 
 
-![alien cute!](greenscaled.jpg) 
+![alien cute!](greenscaled.png) 
 
 ```python
 from PIL import Image
