@@ -175,7 +175,7 @@ img.convert('RGB').save('hueSpin.jpg')
 
 4. Could you write a script that takes two images of equal pixel dimensions, and combines the two together into a new image with alternating pixels? 
 
-	![cute dog](sourceImageOne.jpg) + ![murderous cat](sourceImageTwo.jpg) = ![unholy abomination](merged.jpg)
+	![cute dog](sourceImage1.jpg) + ![murderous cat](sourceImage2.jpg) = ![unholy abomination](merged.jpg)
 
 ```python
 from PIL import Image
