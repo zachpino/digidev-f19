@@ -7,10 +7,10 @@
 1. First, create a script that converts a color image to a grayscale image. Could you then write a script that does the reverse, and creates red/green/blue color versions from grayscale images like [Photoshop's Hue/Saturation Colorize Adjustment](https://helpx.adobe.com/photoshop-elements/using/adjusting-color-saturation-hue-vibrance.html#adjust_saturation_and_hue)? Hint for both: consider borrowing the `computeBrightness` function from the [edge detection](image.md) example. 
 
 	To grayscale:
-	![cute!](sourceImage1.jpg) > ![olde timey cute!](grayscale.jpg) 
+	![olde timey cute!](grayscale.jpg) 
 
 	From grayscale to green (see commented lines in the `for` loop):
-	![cute!](grayscale.jpg) > ![alien cute!](greenscale.jpg) 
+	![alien cute!](greenscale.jpg) 
 
 ```python
 from PIL import Image
@@ -62,6 +62,9 @@ img.save('grayscale.jpg')
 
 2. Create a script that removes all *red color* from an image and replaces it with *green*. 
 
+	Reds to Greens:
+	![underwater cute!](redToGreen.jpg) 
+
 ```python
 from PIL import Image
 #necessary for fast list manipulation
@@ -109,7 +112,7 @@ img.save('redToGreen.jpg')
 
 Could you extend this to be more flexible, partially recreating [Photoshop's Selective Color Adjustment](https://photographypla.net/introduction-selective-color-adjustment/)? Hint: consider using the HSV color space rather than RGB!
 
-![landscape](hue.jpg) > ![landscape](huespin.jpg)
+![landscape](huespin.jpg)
 
 ```python
 from PIL import Image
@@ -175,7 +178,7 @@ img.convert('RGB').save('hueSpin.jpg')
 
 4. Could you write a script that takes two images of equal pixel dimensions, and combines the two together into a new image with alternating pixels? 
 
-	![cute dog](sourceImage1.jpg) + ![murderous cat](sourceImage2.jpg) = ![unholy abomination](merged.jpg)
+	![unholy abomination](merged.jpg)
 
 ```python
 from PIL import Image
