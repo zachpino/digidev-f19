@@ -54,7 +54,6 @@ Documentation and Resources for the Fall 2019 Illinois Tech Institute of Design 
 	- Presentation: [Algorithmic Graphics and Form](readme.md)
 	- Code: [Coding an Image](week10/image.md)
 	- Code: [MatPlotLib 3D](week10/matplotlib3d.md)
-	- Code: [Turtle Graphics](week10/turtle.md)
 	- Code: [Heightfields](week10/heightfield.md)
 	- Homework: [LED Strips, Image Manipulation, and Heightfields](week10/homework.md)
 

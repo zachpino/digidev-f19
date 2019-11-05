@@ -19,7 +19,7 @@
 
 Add 3 wires onto your LED strip so you can connect it to your breadboard, then...
 
-Connect your Raspberry Pi and LED strip to one of the several APIs we have discussed in class so far (census, bus tracker, train tracker, divvy status, something else?). Create a *dynamic visualization* using your LED strip that physicalizes some data from the selected API(s). Make sure you power your Raspberry Pi **via its wall plug**, not over USB, when using the LED strip.
+Connect your [Raspberry Pi and LED strip](../week09/readme.md) to one of the several APIs we have discussed in class so far (census, bus tracker, train tracker, divvy status, something else?). Create a *dynamic visualization* using your LED strip that physicalizes some data from the selected API(s). Make sure you power your Raspberry Pi **via its wall plug**, not over USB, when using the LED strip.
 
 For example, could the LED strip represent a series of stops on certain bus or train stops near your home, with color used to communicate the nearness of the approaching vehicle?  The overall logic is up to you -- but try to make it useful and legible.
 
