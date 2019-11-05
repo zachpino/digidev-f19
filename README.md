@@ -57,4 +57,8 @@ Documentation and Resources for the Fall 2019 Illinois Tech Institute of Design 
 	- Code: [Heightfields](week10/heightfield.md)
 	- Homework: [LED Strips, Image Manipulation, and Heightfields](week10/homework.md)
 
-
+- [Week 11 · Procedural Graphics](week11/readme.md) 	
+	- Presentation: [Procedural Graphics](week11/readme.md)
+	- Code: [Turtle Graphics](week11/turtle.md)
+	- Project Plan: [Project](week11/project.md)
+	- Homework Review: [Image Routines and RGB LED Strips](week11/homework-review.md)
