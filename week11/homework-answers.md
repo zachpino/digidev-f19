@@ -9,7 +9,7 @@
 
 ##### Homework Review
 
-1. First, create a script that converts a color image to a grayscale image. Could you then write a script that does the reverse, and creates red/green/blue color versions from grayscale images like [Photoshop's Hue/Saturation Colorize Adjustment](https://helpx.adobe.com/photoshop-elements/using/adjusting-color-saturation-hue-vibrance.html#adjust_saturation_and_hue)? Hint for both: consider borrowing the `computeBrightness` function from the [edge detection](image.md) example. 
+1. First, create a script that converts a color image to a grayscale image. Could you then write a script that does the reverse, and creates red/green/blue color versions from grayscale images like [Photoshop's Hue/Saturation Colorize Adjustment](https://helpx.adobe.com/photoshop-elements/using/adjusting-color-saturation-hue-vibrance.html#adjust_saturation_and_hue)? Hint for both: consider borrowing the `computeBrightness` function from the [edge detection](../week10/image.md) example. 
 
 ![olde timey cute!](grayscale.jpg) 
 
@@ -172,7 +172,7 @@ img.convert('RGB').save('hueSpin.jpg')
 
 -----
 
-3. Create a [heightfield of your own](heightfield.md) based on an image, or on a part of the world downloaded from [terrain.party](http://terrain.party)? 
+3. Create a [heightfield of your own](../week10/heightfield.md) based on an image, or on a part of the world downloaded from [terrain.party](http://terrain.party)? 
 	
 Usable code [here](../week10/heightfield.md).
 
