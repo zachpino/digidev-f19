@@ -6,9 +6,9 @@
 
 -----
 
-##### Homework Review
+Make sure all this code makes sense for next week, your [RGB LEDs](..week09/circuits.md) are wired and working, and experiment with [turtles](turtle.md) to make some an image or two! 
 
-Make sure all this makes sense for next week! 
+##### Homework Review
 
 1. First, create a script that converts a color image to a grayscale image. Could you then write a script that does the reverse, and creates red/green/blue color versions from grayscale images like [Photoshop's Hue/Saturation Colorize Adjustment](https://helpx.adobe.com/photoshop-elements/using/adjusting-color-saturation-hue-vibrance.html#adjust_saturation_and_hue)? Hint for both: consider borrowing the `computeBrightness` function from the [edge detection](../week10/image.md) example. 
 
