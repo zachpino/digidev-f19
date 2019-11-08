@@ -6,7 +6,7 @@
 
 -----
 
-Make sure all this code makes sense for next week, your [RGB LEDs](..week09/circuits.md) are wired and working, and experiment with [turtles](turtle.md) to make some an image or two! 
+Make sure all this code makes sense for next week, your [RGB LEDs](../week09/circuits.md) are wired and working, and experiment with [turtles](turtle.md) to make some an image or two! 
 
 ##### Homework Review
 
