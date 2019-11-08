@@ -3,7 +3,6 @@
 - Code: [Turtle Graphics](turtle.md)
 - Project Plan: [Project](project.md)
 - Homework Review: [Image Routines and RGB LED Strips](homework-review.md)
-- Homework: [Individual Heightfield Plan, Additions to Model Concept](homework.md)
 
 -----
 
