@@ -19,7 +19,7 @@ http://terrain.party/api/export?name=maybekentucky&box=-86.657427,35.764666,-86.
 
 The `name` key is meaningless, but you can set it to whatever you like (just no special characters or spaces). The `box` key is more interesting, and takes four values in order: the eastern bounding line of longitude, the southern bounding line of latitude, the western bounding line of longitude, and finally the northern bounding line of latitude. This is the order that computers tend to understand [circular logic](https://en.wikipedia.org/wiki/Unit_circle) (clockwise, starting from the east).
 
-## Beware that large images will likely crash matplotlib! Best to resize your heightfield images before projecting them into 3D to no more than 250px on their longest side.
+## Beware that large images will likely crash matplotlib! Best to resize your heightfield images before projecting them into 3D to no more than 250px on their longest side. You can do this in Photoshop or any other image editing program. It is also recommended that you convert any heightfield image to RGB color mode for best results (also through Photoshop "Image" -> "Mode" -> "RGB Color").
 
 ![kilimanjaro](kili_crop.jpg)
 
