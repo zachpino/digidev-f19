@@ -10,11 +10,11 @@
 
 Schedule for the rest of the semester
 
-11/05 · Turtles, Project Plan
-11/12 · Class CNC Intro 
-11/19 · I2C Sensors and Dataset Production
-11/26 · (Optional) Sound and Music Synthesis
-12/03 · Final Class
+- 11/05 · Turtles, Project Plan
+- 11/12 · Class CNC Intro 
+- 11/19 · I2C Sensors and Dataset Production
+- 11/26 · (Optional) Sound and Music Synthesis
+- 12/03 · Final Class
 
 11/13 or 11/20 or 11/27 (or another time scheduled) · Individal CNC milling
 
