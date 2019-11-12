@@ -51,7 +51,7 @@ Use the following steps as a rough guide for how to advance through the physical
 
 	And, running the math, a single LED represents the north turnstile exit of the 35th-Bronzeville-IIT Green Line stop at its southeast corner and the Kaplan Institute at its Northwest.
 
-	Alternatively, you can visually make the decision! If you look at this map of [census tracts](https://www.chicago.gov/city/en/depts/doit/dataset/boundaries_-_censustracts.html), you can try to visualize how an 8x8 grid could be used to light up a meaningful set of tracts or geography.
+	Alternatively, you can visually make the decision! If you look at this map of [census tracts](https://www.chicago.gov/city/en/depts/doit/dataset/boundaries_-_censustracts.html), you can try to visualize how an 8x8 grid could be used to light up a meaningful set of tracts or geography. You can also use [mapshaper](https://mapshaper.org) with this [shapefile](https://www.chicago.gov/city/en/depts/doit/dataset/boundaries_-_censustracts.html) for more precision.
 
 	![LED Layout](LEDposition.png)
 
@@ -67,11 +67,13 @@ Use the following steps as a rough guide for how to advance through the physical
 
 -----
 
-5. Take a look at your heightfield in code! 
+5. Take a look at your heightfield in code and mill it! 
 	
 	There are two new methods for more performative visualization based on a [quad surface (still a bit slow)](surface-plot.md), or using a different visualizer for much faster behavior [Mayavi](mayavi-hf.md). Still, try to resize the image to expedite prototyping, keeping it under 200px on its longest dimension until you are ready to finalize your design. Remember that your heightfield will be squished on its Z-dimension to 1.5" of variation at most. So, if you are seeing a large variation in height in your 3D surface, consider dividing Z by some (additional) scaling factor to get a feel for the real proportions.
 
 	![quadplot](quadplot.png)
+
+	Send your heightfield image and Python code to Zach, and schedule a milling time (around an hour total)! 
 
 -----
 
