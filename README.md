@@ -67,5 +67,7 @@ Documentation and Resources for the Fall 2019 Illinois Tech Institute of Design 
 	- Presentation: [Project Plan](week12/readme.md)
 	- Presentation: [Milling References](week12/milling.md)
 	- Code: [Example Choropleth Generator Code](week12/choropleth.md)
+	- Code: [Better MatPlotLib Heightfields](week12/surface-plot.md)
+	- Code: [Alternative Mayavi Heightfields](week12/mayavi-hf.md)
 	- Code: [Example Project Code](week12/project.md)
 	- Homework: Get to it!

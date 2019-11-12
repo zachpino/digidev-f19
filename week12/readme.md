@@ -2,6 +2,8 @@
 - Presentation: [Project Plan](readme.md)
 - Presentation: [Milling References](milling.md)
 - Code: [Example Choropleth Generator Code](choropleth.md)
+- Code: [Better MatPlotLib Heightfields](surface-plot.md)
+- Code: [Alternative Mayavi Heightfields](mayavi-hf.md)
 - Code: [Example Project Code](project.md)
 - Homework: Get to it!
 
@@ -42,20 +44,20 @@ Use the following steps as a rough guide for how to advance through the physical
 	Experimentally, a region slightly smaller than 2 miles by 2 miles tends to work well for most of Chicago, though more populous areas might need tighter bounding boxes. This is close to a 16 by 16 city block region of the city, according to [Chicago's regular address system](https://www.chicagorailfan.com/majorst.html), which makes each LED represent a square quarter mile — roughly a set of four city blocks. To give a more real example, the example demonstrated here is bounded by the following streets...
 
 	```
-			18th
-	Racine		  King Drive
-			34th
+	       18th
+	Racine      King Drive
+	       34th
 	```
 
 	And, running the math, a single LED represents the north turnstile exit of the 35th-Bronzeville-IIT Green Line stop at its southeast corner and the Kaplan Institute at its Northwest.
 
 	Alternatively, you can visually make the decision! If you look at this map of [census tracts](https://www.chicago.gov/city/en/depts/doit/dataset/boundaries_-_censustracts.html), you can try to visualize how an 8x8 grid could be used to light up a meaningful set of tracts or geography.
 
-	![LED Layout](LEDlayout.png)
+	![LED Layout](LEDposition.png)
 
 	You can definitely go larger, though. If you wanted to show data relating to the contiguous United States, distinguishing the layout of the complicatedly drawn state boundaries might be difficult, especially in the northeast where the states are small. But you can [intentionally design a map distortion](http://fivethirtyeight.com/features/where-your-state-gets-its-money/) based on a grid or other pattern. You could also light up [census divisions or regions](https://www.census.gov/prod/1/gen/95statab/preface.pdf) instead of the states — a geographic entity also supported by the ACS.
 
-	It is also possible to place the LEDs in patterns other than grids, and instead lay the LEDs out in more [unusual paths](http://www.nicetrails.com) or geometries like rings, radial lines, or spirals by cutting and twisting the strips. In which case, the distance resolution along all the paths will likewise be set at a linear 16.54mm per LED.
+	It is also possible to place the LEDs in patterns other than grids, and instead lay the LEDs out in more [unusual paths](http://www.nicetrails.com) or geometries like rings, radial lines, or spirals by cutting and twisting the strips. In which case, the distance resolution along all the paths will likewise be set at a linear 16.54mm/.66" per LED.
 
 -----
 

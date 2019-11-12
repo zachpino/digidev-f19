@@ -1,3 +1,34 @@
+##### Week 12 Contents
+- Presentation: [Project Plan](readme.md)
+- Presentation: [Milling References](milling.md)
+- Code: [Example Choropleth Generator Code](choropleth.md)
+- Code: [Better MatPlotLib Heightfields](surface-plot.md)
+- Code: [Alternative Mayavi Heightfields](mayavi-hf.md)
+- Code: [Example Project Code](project.md)
+- Homework: Get to it!
+
+-----
+
+[Mayavi](https://docs.enthought.com/mayavi/mayavi/) is an open source module for Python, as well as a standalone application, for viewing and manipulating 3D data and complex scientific datasets. It is very efficient at triangulation compared to MatPlotLib, and provides for a much nicer experience when engaging heavy data.
+
+Mayavi's Python bindings are designed to be a drop-in replacement for MatPlotLib, so code does not need to change much to switch back and forth between the two libraries. Try it out! 
+
+To install Mayavi...
+
+```
+pip install mayavi
+pip install PyQt5
+```
+
+If you get a yellow 'warning' error when running the second line (Zach did...), Mayavi should still work fine.
+
+Here is a heightfield rendered in Mayavi, with an image sourced from the super cool [Migrations in Motion](http://maps.tnc.org/migrations-in-motion/#5/-4.083/-76.465) project.
+
+![mayavi hf](mayavi.md)
+
+-----
+
+```python
 #for image reading
 from PIL import Image
 #for faster processing and power
@@ -6,7 +37,7 @@ import numpy as np
 from mayavi import mlab
 
 #open an image
-img = Image.open("terrain.png")
+img = Image.open("terrain.jpg")
 
 #get rgb pixel data out of image
 pixels = list(img.getdata())
@@ -43,7 +74,6 @@ def zScale(latMin, latMax, heightPixels, elevMin, elevMax, brightnessRange=255) 
 
 #all numbers found in the text file that comes with terrain.party downloads
 zScaleFactor = zScale(-2.885387,-3.244713, height, 1179, 7174, 255)
-
 
 #make x and y data
 #create an array (like a python list but faster) that looks like [0,1,2,3...] for X and Y, up to the image dimensions
