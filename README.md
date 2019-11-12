@@ -62,3 +62,10 @@ Documentation and Resources for the Fall 2019 Illinois Tech Institute of Design 
 	- Code: [Turtle Graphics](week11/turtle.md)
 	- Project Plan: [Project](week11/project.md)
 	- Homework Review: [Image Routines and RGB LED Strips](week11/homework-review.md)
+
+- [Week 12 · CNC Milling](week12/readme.md) 	
+	- Presentation: [Project Plan](week12/readme.md)
+	- Presentation: [Milling References](week12/milling.md)
+	- Code: [Example Choropleth Generator Code](week12/choropleth.md)
+	- Code: [Example Project Code](week12/project.md)
+	- Homework: Get to it!
