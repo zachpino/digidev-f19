@@ -24,7 +24,7 @@ If you get a yellow 'warning' error when running the second line (Zach did...), 
 
 Here is a heightfield rendered in Mayavi, with an image sourced from the super cool [Migrations in Motion](http://maps.tnc.org/migrations-in-motion/#5/-4.083/-76.465) project.
 
-![mayavi hf](mayavi.md)
+![mayavi hf](mayavi.png)
 
 -----
 
