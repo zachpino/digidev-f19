@@ -38,7 +38,7 @@ Check out the work of [Adrien Segal](https://www.adriensegal.com) and [Stephen C
 
 The small heightfields are prototypes for a larger, site-specific installation. Our content work through the semester will be the seed for this installation, which will focus on visualizing policy-level transit interventions.
 
-Towards this end, students are asked to submit the following content as a 500-1000 word paper, with data visualizations produced from Python and matplotlib (or other data-manipulation tools like Tableau or Excel) explicating **some or all** of the following questions:
+Towards this end, students are asked to submit the following content as a 500-1000 word paper, with data visualizations produced from Python and matplotlib (or other data-manipulation tools like Tableau or Excel) explicating **one, many, or all** of the following questions:
 
 1. What design-level or policy-level interventions would make for a more inclusive transit system in Chicago?
 2. What parameters of Chicago's demographic makeup lead some areas to need more transit support than others?
