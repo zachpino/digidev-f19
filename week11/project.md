@@ -12,11 +12,11 @@ Schedule for the rest of the semester
 
 - 11/05 · Turtles, Project Plan
 - 11/12 · Class CNC Intro 
-- 11/19 · I2C Sensors and Dataset Production
-- 11/26 · (Optional) Sound and Music Synthesis
-- 12/03 · Final Class
+- 11/19 · Check-Ins
+- 11/26 · Check-Ins
+- 12/03 · Final Class, Review Progress
+- 12/10 · Photos of Models and Papers Submitted for Grading
 
-11/13 or 11/20 or 11/27 (or another time scheduled) · Individal CNC milling
 
 ### Individual Project! 
 
@@ -42,6 +42,6 @@ Towards this end, students are asked to submit the following content as a 500-10
 
 1. What design-level or policy-level interventions would make for a more inclusive transit system in Chicago?
 2. What parameters of Chicago's demographic makeup lead some areas to need more transit support than others?
-3. How would we evaluate in data the efficacy of a design intervention? 
-4. What aspects of Chicago's existing transit infranstructure should be exposed as variables for designers to consider?
+3. How would we evaluate (in data) the efficacy of a design intervention? What new data should we be collecting?
+4. What aspects of Chicago's existing transit infranstructure should be exposed as variables for [policy] designers to consider?
 
