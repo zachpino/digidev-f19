@@ -22,7 +22,7 @@ Schedule for the rest of the semester
 
 ![model](model.png)
 
-Everyone is asked to produce a small heightfield model, designed to be cut from a 6" x 6" x 2" acrylic stock. These heightfields will be illuminated from below with an LED array, and can be lit by either... 
+Everyone is asked to produce a small heightfield model, designed to be cut from a 6" x 6" x 1.5" acrylic stock. These heightfields will be illuminated from below with an LED array, and can be lit by either... 
 
 1. Some [dynamic?] real life data source such as census data or other apis
 
