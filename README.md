@@ -71,3 +71,8 @@ Documentation and Resources for the Fall 2019 Illinois Tech Institute of Design 
 	- Code: [Alternative Mayavi Heightfields](week12/mayavi-hf.md)
 	- Code: [Example Project Code](week12/project.md)
 	- Homework: Get to it!
+
+
+- [Week 15 · CNC Milling](week12/readme.md) 	
+	- Presentation: [More to Do with RasPi](week15/readme.md)
+	- Logistics: [Course Wrap-Up](week15/wrap-up.md)
