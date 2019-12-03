@@ -73,6 +73,6 @@ Documentation and Resources for the Fall 2019 Illinois Tech Institute of Design 
 	- Homework: Get to it!
 
 
-- [Week 15 · CNC Milling](week12/readme.md) 	
+- [Week 15 · Wrapping-Up](week12/readme.md) 	
 	- Presentation: [More to Do with RasPi](week15/readme.md)
 	- Logistics: [Course Wrap-Up](week15/wrap-up.md)
