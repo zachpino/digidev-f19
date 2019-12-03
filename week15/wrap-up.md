@@ -4,7 +4,18 @@
 
 -----
 
+##### Did you upgrade to Catalina?
+
+This causes incompatiblity with Anaconda! Follow [these steps](https://www.anaconda.com/how-to-restore-anaconda-after-macos-catalina-update/) to repair the issues.
+
+If you have a `~/opt/anaconda3/` folder, you might need to do `sudo mv ~/opt/anaconda3 ~/` **before** the linked steps above.
+
+-----
+
+##### Finalizing Work
+
 Please complete the following steps for consideration for grading by **5pm on Tuesday, December 10**
+
 
 1. Make a folder in our [shared Google Drive `Final Work` folder](https://drive.google.com/open?id=1-_xr-Bb3jzO5nSPbf0XV7tGdn9ZM164J), titled with your name. 
 
