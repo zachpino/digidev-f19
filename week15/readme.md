@@ -66,13 +66,15 @@ Create a Raspberry Pi MIDI-enabled synthesizer to create your own music, edit so
 
 The excellent Kodi and Plex applications allow the easy management and viewing of all kinds of media files including television episodes, movies, music, mirrored games, streaming content like Netflix and Hulu, podcasts, photographs, whatever! Your Raspberry Pi, hooked up to your TV, an infrared remote control, a hard drive, and your router can become a very powerful home theater driver.
 
-- ![Kodi RasPi Media Center](https://www.makeuseof.com/tag/kodi-raspberry-pi-media-center/)
-- ![Plex on RasPi](https://www.makeuseof.com/tag/raspberry-pi-plex-media-server/)
-- ![RasPlex](https://www.rasplex.com)
+- [Kodi RasPi Media Center](https://www.makeuseof.com/tag/kodi-raspberry-pi-media-center/)
+- [Plex on RasPi](https://www.makeuseof.com/tag/raspberry-pi-plex-media-server/)
+- [RasPlex](https://www.rasplex.com)
 
 -----
 
 ##### Raspberry Pi NAS
+
+![NASty](https://images.ctfassets.net/tvfg2m04ppj4/2TAbWtusZcIU3wG0XbaowD/a5708b325232d2a7e8a0779ee00f7368/main-web.jpg?w=800)
 
 One of the more esoteric, but most useful applications of a Raspberry Pi is as the brains behind a [network attached storage device](https://thewirecutter.com/reviews/best-network-attached-storage/#who-this-is-for). A bunch of cheap hard drives attached to a RasPi and a router enables much more intelligent home file and media sharing, powerful redundant data backups, and opens up your files to you anywhere on the planet.
 
