@@ -26,7 +26,7 @@ Never buy the over-priced [Philips Hue light strips](https://www.amazon.com/Phil
 
 (60 * 16) / 1000 = .96 Amps -- doable with just 1 amp of available power, but just barely.
 
-![RGB LED Strip](neopixel-bb.png)
+![RGB LED Strip](neopixel-bb-fix.png)
 
 -----
 
