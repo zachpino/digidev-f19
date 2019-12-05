@@ -72,7 +72,6 @@ Documentation and Resources for the Fall 2019 Illinois Tech Institute of Design 
 	- Code: [Example Project Code](week12/project.md)
 	- Homework: Get to it!
 
-
 - [Week 15 · Wrapping-Up](week15/readme.md) 	
 	- Presentation: [More to Do with RasPi](week15/readme.md)
 	- Code Update: [Better Sample Code](week15/project-update.md)

@@ -41,6 +41,12 @@ And reboot!
 sudo reboot now
 ```
 
+**To run your code, you will need to type...**
+
+```
+sudo python3 filename.py
+```
+
 ------
 
 ##### Sample Code
