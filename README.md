@@ -75,4 +75,6 @@ Documentation and Resources for the Fall 2019 Illinois Tech Institute of Design 
 
 - [Week 15 · Wrapping-Up](week15/readme.md) 	
 	- Presentation: [More to Do with RasPi](week15/readme.md)
+	- Code Update: [Better Sample Code](week15/project-update.md)
 	- Logistics: [Course Wrap-Up](week15/wrap-up.md)
+
