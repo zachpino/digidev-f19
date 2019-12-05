@@ -1,5 +1,6 @@
 ##### Week 15 Contents
 - Presentation: [More to Do with RasPi](readme.md)
+- Code Update: [Better Sample Code](project-update.md)
 - Logistics: [Course Wrap-Up](wrap-up.md)
 
 -----

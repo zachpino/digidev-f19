@@ -145,7 +145,7 @@ while True:
 		
 		#iterate through led associated with this tract.
 		# for j in row[leds]:
-			#strip.setPixelColor(row[leds][j], Color(cmap(row["percentageMaleAmbulatoryDisability"])))
+			#strip.setPixelColor(row["leds"][j], Color(cmap(row["percentageMaleAmbulatoryDisability"])))
 			#strip.show()
 
 	time.sleep(5)
