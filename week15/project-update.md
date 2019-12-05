@@ -11,6 +11,8 @@ Thanks so much to Yuta, we have some very useful utilities, sample code, and bet
 
 This new approach is **highly recommended**, and will save you all a lot of time in the end, even if it means tweaking some already completed work. 
 
+Note, though, that for this code to work well, all data passed to the LED animation functions need to be between 0 and 1. Percentage, ranks, sequence position, quantized bins are all great. Take a look at lines 206-237 in the sample code below to see how to transform your data into the appropriate shape. 
+
 -----
 
 ##### Module Installations
